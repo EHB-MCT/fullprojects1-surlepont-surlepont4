@@ -1,0 +1,51 @@
+
+body{
+    margin: 0pt;
+    background-image: url(/afbeeldingen/achtergrond\ afbeelding.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+
+}
+.header{
+    display: inline-block;
+    background-color: white;
+    height: 110px;
+   
+    width: 100%;
+    }
+.header img{ 
+    height: 90px;
+    margin: 15px 130px;
+}
+
+.taal {
+    float: left;
+    padding-left: 200px;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav {
+    padding-top: 40px;
+    padding-right: 150px;
+    float: right;
+    font-size: 16pt;
+}
+.nav a {
+    padding-right: 20px;
+}
+
+.slogan h1{
+    margin: 20%;
+    border-radius: 30px;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+}
