@@ -1,0 +1,92 @@
+body {
+	margin: 0px;
+	background-image: url(afbeeldingen/IMG_2925.jpg);
+	background-size: 100%;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background-color: white;
+	box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.215);
+}
+
+.header_grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 100%;
+	align-items: center;
+}
+
+.taal {
+	grid-column: 4/5;
+	font-family: azo-sans-web, sans-serif;
+	font-weight: 700;
+	font-size: 10pt;
+}
+
+.taal a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav {
+	grid-column: 6/13;
+	color: black;
+	font-family: azo-sans-web, sans-serif;
+	font-weight: 700;
+	font-size: 16pt;
+	font-style: normal;
+
+	float: right;
+}
+
+.nav a {
+	padding: auto 0 auto 0;
+	margin: 20px;
+	text-decoration: none;
+	color: black;
+	line-height: 35px;
+}
+
+.logo img {
+	grid-column: 2/3;
+	width: 100%;
+	position: center;
+}
+
+.logo {
+	grid-column: 2/3;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 150px 600px;
+}
+
+.slogan {
+	grid-column: 2/6;
+	grid-row: 2 /5;
+	background-color: white;
+	border-radius: 22px;
+	text-align: center;
+
+	font-family: azo-sans-web, sans-serif;
+	font-weight: 700;
+	font-size: 16pt;
+}
+
+p {
+	background-color: grey;
+	color: grey;
+	position: absolute;
+	margin-top: -560px;
+	margin-left: 130px;
+	padding-left: 340px;
+	padding-right: 10px;
+	padding-bottom: 500px;
+	border-radius: 22px;
+	filter: drop-shadow(0.01em 0.01em 0.3em);
+}
