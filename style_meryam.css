@@ -9,6 +9,7 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 100%;
+    background-color: #fff;
 }
 
 .header {
@@ -71,4 +72,8 @@ body {
 
 }
 
-.backwhite {}
+.backwhite {
+    background-color: purple;
+    grid-column: 2/3;
+    grid-row: 5/8;
+}
