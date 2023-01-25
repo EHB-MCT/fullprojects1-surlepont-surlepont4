@@ -1,7 +1,7 @@
+@import url("https://use.typekit.net/tsi2hks.css");
+
 body {
 	margin: 0px;
-	background-image: url(afbeeldingen/IMG_2925.jpg);
-	background-size: 100%;
 }
 
 .header {
@@ -10,6 +10,7 @@ body {
 	height: 80px;
 	background-color: white;
 	box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.215);
+	z-index: 1;
 }
 
 .header_grid {
@@ -66,16 +67,17 @@ body {
 	grid-template-rows: 150px 600px;
 }
 
-.slogan {
-	grid-column: 2/6;
+.title {
+	grid-column: 5/9;
 	grid-row: 2 /5;
 	background-color: white;
 	border-radius: 22px;
 	text-align: center;
 
-	font-family: azo-sans-web, sans-serif;
-	font-weight: 700;
-	font-size: 16pt;
+	font-family: "roc-grotesk-condensed", sans-serif;
+	font-weight: 600;
+	font-size: 34pt;
+	color: #4f8265;
 }
 
 p {
@@ -89,4 +91,76 @@ p {
 	padding-bottom: 500px;
 	border-radius: 22px;
 	filter: drop-shadow(0.01em 0.01em 0.3em);
+}
+
+.square1 {
+	position: absolute;
+	background-color: #fff;
+	color: #fff;
+	font-size: 10px;
+	margin-top: 280px;
+	margin-left: 480px;
+	padding: 150px;
+	padding-bottom: 220px;
+	padding-right: 130px;
+	padding-left: 130px;
+	padding-top: 140px;
+	transform: rotate(8deg);
+	box-shadow: 2px 2px 4px black;
+	z-index: 0;
+}
+
+.one {
+	position: absolute;
+	margin-left: -117px;
+	width: 250px;
+	margin-top: -170px;
+}
+
+.square2 {
+	position: absolute;
+	background-color: #fff;
+	color: #fff;
+	font-size: 10px;
+	margin-top: 650px;
+	margin-left: 480px;
+	padding: 150px;
+	padding-bottom: 200px;
+	padding-right: 120px;
+	padding-left: 135px;
+	padding-top: 140px;
+	transform: rotate(-8deg);
+	box-shadow: 2px 2px 4px black;
+	z-index: 0;
+}
+
+.two {
+	position: absolute;
+	margin-left: -125px;
+	width: 250px;
+	margin-top: -170px;
+}
+
+.square3 {
+	position: absolute;
+	background-color: #fff;
+	color: #fff;
+	font-size: 10px;
+	margin-top: 950px;
+	margin-left: 400px;
+	padding: 150px;
+	padding-bottom: 80px;
+	padding-right: 200px;
+	padding-left: 210px;
+	padding-top: 125px;
+	transform: rotate(8deg);
+	box-shadow: 2px 2px 4px black;
+	z-index: 0;
+}
+
+.three {
+	position: absolute;
+	margin-left: -200px;
+	width: 350px;
+	margin-top: -155px;
 }
