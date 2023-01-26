@@ -2,8 +2,9 @@
 
  body {
      margin: 0px;
-     background-image: url(afbeeldingen/brugbackground.png);
+     background-image: url(afbeeldingen/backgrounds/achtergrond_contact.jpg);
      background-position: center;
+     background-size: cover;
      background-attachment: fixed;
 
  }
@@ -74,7 +75,7 @@
  .grid {
      display: grid;
      grid-template-columns: repeat(12, 1fr);
-     grid-template-rows: 200px 500px;
+     grid-template-rows: 500px 1000px;
  }
 
  .kader {
@@ -82,6 +83,7 @@
      grid-column: 2/12;
      grid-row: 2/12;
      border-radius: 22px;
+     margin-bottom: 200px;
 
  }
 
