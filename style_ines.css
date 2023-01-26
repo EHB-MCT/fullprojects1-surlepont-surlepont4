@@ -74,7 +74,6 @@ body {
 .slogan {
 	grid-column: 2/12;
 	grid-row: 2/10;
-	background-color: white;
 	text-align: 5/6;
 
 	font-family: azo-sans-web, sans-serif;
@@ -90,9 +89,10 @@ body {
 }
 
 .slogan p {
+	position: absolute;
 	margin-left: 160px;
 	font-size: 15px;
-	margin-top: -220px;
+	margin-top: 330px;
 	margin-right: 350px;
 	margin-bottom: 10px;
 }
@@ -105,7 +105,7 @@ body {
 .bad {
 	position: absolute;
 	margin-left: -900px;
-	margin-top: 40px;
+	margin-top: 10px;
 	width: 550px;
 	z-index: 0;
 	border-radius: 22px;
@@ -127,21 +127,29 @@ body {
 
 h1 {
 	position: absolute;
-	margin-top: -700px;
+	margin-top: -120px;
 	margin-left: 150px;
 	color: #377150;
 }
 
 h2 {
 	position: absolute;
-	margin-top: -650px;
+	margin-top: -70px;
 	margin-left: 150px;
 	color: #88c0bd;
+	z-index: 1;
 }
 
 .bottom {
-	margin-top: -440px;
+	position: absolute;
+	margin-top: 440px;
 	margin-left: 385px;
 	width: 800px;
 	transform: rotate(180deg);
+}
+
+.square {
+	height: 50px;
+	width: 50px;
+	background-color: #555;
 }
