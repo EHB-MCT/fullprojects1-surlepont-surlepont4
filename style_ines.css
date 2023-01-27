@@ -2,6 +2,10 @@
 
 body {
 	margin: 0px;
+	background-image: url(afbeeldingen/backgrounds/achtergrond_geschiedenis.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .header {
@@ -10,7 +14,7 @@ body {
 	height: 80px;
 	background-color: white;
 	box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.215);
-	z-index: 1;
+	z-index: 2;
 }
 
 .header_grid {
@@ -64,103 +68,258 @@ body {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 150px 600px;
+	grid-template-rows: minmax(1, 20);
+	grid-template-rows: 650px;
+}
+
+.slogan {
+	grid-column: 2/12;
+	grid-row: 2/10;
+	text-align: 5/6;
+
+	font-family: azo-sans-web, sans-serif;
+	font-weight: 700;
+	font-size: 16pt;
+}
+
+.wie {
+	color: #377150;
+	margin-left: 50px;
+	font-size: 30px;
+	margin-top: -400px;
+}
+
+.info {
+	position: absolute;
+	margin-left: 160px;
+	font-size: 15px;
+	margin-top: 330px;
+	margin-right: 350px;
+	margin-bottom: 10px;
+}
+
+.top {
+	margin-top: -480px;
+	margin-left: -37px;
+}
+
+.bad {
+	position: absolute;
+	margin-left: -900px;
+	margin-top: 10px;
+	width: 550px;
+	z-index: 0;
+	border-radius: 22px;
 }
 
 .title {
-	grid-column: 5/9;
-	grid-row: 2 /5;
+	position: absolute;
+	margin-top: -100px;
+	margin-left: 80px;
+	color: #377150;
+}
+
+.text1 {
+	position: absolute;
+	margin-left: 80px;
+	margin-top: -40px;
+	color: #88c0bd;
+}
+
+h1 {
+	position: absolute;
+	margin-top: -120px;
+	margin-left: 150px;
+	color: #377150;
+}
+
+h2 {
+	position: absolute;
+	margin-top: -70px;
+	margin-left: 150px;
+	color: #88c0bd;
+	z-index: 1;
+}
+
+.bottom {
+	position: absolute;
+	margin-top: 440px;
+	margin-left: 159px;
+	width: 1000px;
+	transform: rotate(180deg);
+}
+
+.square {
 	background-color: white;
-	border-radius: 22px;
+	margin-top: 10000px;
+	position: absolute;
+}
+
+.word {
+	position: absolute;
+	background-color: white;
+	width: 1090px;
+	height: 460px;
+	margin-top: 10px;
+	margin-left: -37px;
+	color: white;
+}
+
+.pijl1 {
+	position: absolute;
+	margin-left: -880px;
+	margin-top: 150px;
+	width: 25px;
+	z-index: 2;
+}
+
+.pijl2 {
+	position: absolute;
+	margin-left: -340px;
+	margin-top: 150px;
+	width: 25px;
+	transform: rotate(180deg);
+	z-index: 2;
+}
+
+#slider {
+	margin: 0 auto;
+	width: 600px;
+	margin-left: 260px;
+	max-width: 100%;
 	text-align: center;
-
-	font-family: "roc-grotesk-condensed", sans-serif;
-	font-weight: 600;
-	font-size: 34pt;
-	color: #4f8265;
 }
-
-p {
-	background-color: grey;
-	color: grey;
-	position: absolute;
-	margin-top: -560px;
-	margin-left: 130px;
-	padding-left: 340px;
-	padding-right: 10px;
-	padding-bottom: 500px;
+#slider input[type="radio"] {
+	display: none;
+}
+#slider label {
+	cursor: pointer;
+	text-decoration: none;
+}
+#slides {
+	position: relative;
+	z-index: 1;
+}
+#overflow {
+	width: 100%;
+	overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+	margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+	margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+	margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+	margin-left: -300%;
+}
+#slides .inner {
+	transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
+	width: 400%;
+	line-height: 0;
+	height: 300px;
+}
+#slides .slide {
+	width: 25%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	color: #fff;
+}
+#slides .slide_1 {
+	background-image: url(afbeeldingen/geschiedenis/Picture1-3.jpg);
+	background-size: 100%;
 	border-radius: 22px;
-	filter: drop-shadow(0.01em 0.01em 0.3em);
 }
-
-.square1 {
-	position: absolute;
-	background-color: #fff;
-	color: #fff;
-	font-size: 10px;
-	margin-top: 280px;
-	margin-left: 480px;
-	padding: 150px;
-	padding-bottom: 220px;
-	padding-right: 130px;
-	padding-left: 130px;
-	padding-top: 140px;
-	transform: rotate(8deg);
-	box-shadow: 2px 2px 4px black;
-	z-index: 0;
+#slides .slide_2 {
+	background-image: url(afbeeldingen/geschiedenis/Picture10.jpg);
+	background-size: 100%;
+	border-radius: 22px;
 }
-
-.one {
-	position: absolute;
-	margin-left: -117px;
-	width: 250px;
-	margin-top: -170px;
+#slides .slide_3 {
+	background-image: url(afbeeldingen/geschiedenis/Picture2.jpg);
+	background-size: 100%;
+	border-radius: 22px;
 }
-
-.square2 {
-	position: absolute;
-	background-color: #fff;
-	color: #fff;
-	font-size: 10px;
-	margin-top: 650px;
-	margin-left: 480px;
-	padding: 150px;
-	padding-bottom: 200px;
-	padding-right: 120px;
-	padding-left: 135px;
-	padding-top: 140px;
-	transform: rotate(-8deg);
-	box-shadow: 2px 2px 4px black;
-	z-index: 0;
+#slides .slide_4 {
+	background-image: url(afbeeldingen/geschiedenis/Picture3.jpg);
+	background-size: 100%;
+	border-radius: 22px;
 }
-
-.two {
-	position: absolute;
-	margin-left: -125px;
-	width: 250px;
-	margin-top: -170px;
+#controls {
+	margin: -180px 0 0 0;
+	width: 100%;
+	height: 50px;
+	z-index: 3;
+	position: relative;
 }
-
-.square3 {
-	position: absolute;
-	background-color: #fff;
-	color: #fff;
-	font-size: 10px;
-	margin-top: 950px;
-	margin-left: 400px;
-	padding: 150px;
-	padding-bottom: 80px;
-	padding-right: 200px;
-	padding-left: 210px;
-	padding-top: 125px;
-	transform: rotate(8deg);
-	box-shadow: 2px 2px 4px black;
-	z-index: 0;
+#controls label {
+	transition: opacity 0.2s ease-out;
+	display: none;
+	width: 50px;
+	height: 50px;
+	opacity: 0.4;
 }
+#controls label:hover {
+	opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+	background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+	float: right;
 
-.three {
-	position: absolute;
-	margin-left: -200px;
-	width: 350px;
-	margin-top: -155px;
+	z-index: 4;
+	margin: 0 5px 0 0;
+	display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+	background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+	float: left;
+
+	margin: 0 0 0 5px;
+	display: block;
+}
+#bullets {
+	margin: 150px 0 0;
+	text-align: center;
+}
+#bullets label {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background: #ccc;
+	margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+	background: #444;
+}
+@media screen and (max-width: 900px) {
+	#slide1:checked ~ #controls label:nth-child(2),
+	#slide2:checked ~ #controls label:nth-child(3),
+	#slide3:checked ~ #controls label:nth-child(4),
+	#slide4:checked ~ #controls label:nth-child(1),
+	#slide1:checked ~ #controls label:nth-last-child(2),
+	#slide2:checked ~ #controls label:nth-last-child(3),
+	#slide3:checked ~ #controls label:nth-last-child(4),
+	#slide4:checked ~ #controls label:nth-last-child(1) {
+		margin: 0;
+	}
+	#slides {
+		max-width: calc(100% - 140px);
+		margin: 0 auto;
+	}
 }
