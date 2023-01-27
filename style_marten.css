@@ -103,7 +103,7 @@ body {
 	background-color: white;
 	position: relative;
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: 20px 500px 100px 300px 100px 600px;
+	grid-template-rows: 20px 500px 100px 300px 100px 600px 100px 500px;
 }
 
 .wie {
@@ -161,6 +161,41 @@ body {
 	grid-column: 1/11;
 	grid-row: 5/6;
 	justify-content: center;
+}
+
+.voorstel {
+	display: flex;
+	text-align: center;
+	grid-column: 1/11;
+	grid-row: 7/8;
+	justify-content: center;
+}
+
+.voorstellen {
+	grid-column: 3/9;
+	grid-row: 8/9;
+}
+
+.voorstellen img {
+	width: 100%;
+	display: flex;
+	border-radius: 22px;
+}
+
+.interview {
+	grid-column: 3/6;
+	grid-row: 9/10;
+
+
+}
+
+.interview img {
+	width: 100%;
+	border-radius: 22px;
+}
+
+.water2 {
+	grid-column: ;
 }
 
 span {
