@@ -67,7 +67,7 @@ body {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 400px 180px 25px 1500px;
+	grid-template-rows: 400px 180px 2500px 180px 400px;
 }
 
 
@@ -98,12 +98,12 @@ body {
 
 .kader {
 	grid-column: 2/12;
-	grid-row: 3/10;
+	grid-row: 3/4;
 	display: grid;
 	background-color: white;
 	position: relative;
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: 20px 500px 100px 300px 100px 600px 100px 500px;
+	grid-template-rows: 20px 500px 100px 300px 100px 600px 100px 500px 200px 180px;
 }
 
 .wie {
@@ -163,6 +163,20 @@ body {
 	justify-content: center;
 }
 
+.amispic {
+	grid-column: 1/11;
+	grid-row: 6/7;
+	display: flex;
+	justify-content: center;
+
+}
+
+.amispic img {
+	height: 100%;
+
+}
+
+
 .voorstel {
 	display: flex;
 	text-align: center;
@@ -185,8 +199,6 @@ body {
 .interview {
 	grid-column: 3/6;
 	grid-row: 9/10;
-
-
 }
 
 .interview img {
@@ -194,8 +206,33 @@ body {
 	border-radius: 22px;
 }
 
+.interviewtext {
+	grid-column: 6/9;
+	grid-row: 9/10;
+	margin-left: 20px;
+	display: flex;
+	align-self: center;
+}
+
 .water2 {
-	grid-column: ;
+
+	grid-column: 5/12;
+	grid-row: 4/5;
+	position: relative;
+	display: flex;
+	align-self: flex-start;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.title2 {
+	position: absolute;
+	left: 350px;
+
+}
+
+img.water2 {
+	transform: rotate(180deg);
 }
 
 span {
@@ -239,6 +276,45 @@ h3 {
 	font-weight: 600;
 	font-style: normal;
 	font-size: 34px;
+}
+
+.taalbtn {
+	color: #88C0BD;
+	grid-column: 4/5;
+	font-family: "azo-sans-web", sans-serif;
+	font-weight: 700;
+	font-size: 10pt;
+	border: none;
+	background-color: white;
+}
+
+.taal {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown a {
+	color: #377150;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover {
+	background-color: #f1f1f1
+}
+
+.taal:hover .dropdown {
+	display: block;
 }
 
 
