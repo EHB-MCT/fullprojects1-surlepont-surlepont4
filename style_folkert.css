@@ -96,7 +96,7 @@ body {
 	grid-row: 3/4;
 	background-color: white;
 	display: grid;
-	grid-template-columns: repeat(10, 1fr);
+	/*grid-template-columns: repeat(12, 1fr);*/
 }
 
 .water2 {
@@ -187,6 +187,28 @@ h3 {
 	display: block;
 }
 
-.birds {
-text-align: center;
+.geschiedenis {
+    text-align: center;
+
+}
+
+.geschiedenis video {
+    grid-column: 3/10;
+    width: 100%;
+
+}
+.geschiedenis h1{
+    padding-top: 50px;
+}
+
+.geschiedenis a{
+    background-color: #377150;
+    color: #f1f1f1;
+    font-family: "roc-grotesk-condensed", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+    border-radius: 30px;
+    padding: 20px;
+    text-decoration: none;
+    margin-top: 40px;
 }
