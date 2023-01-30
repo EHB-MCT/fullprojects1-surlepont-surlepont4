@@ -68,7 +68,7 @@ body {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 400px 180px 2500px 180px 400px;
+	grid-template-rows: 400px 180px auto 180px 400px;
 }
 
 
@@ -104,24 +104,28 @@ body {
 	background-color: white;
 	position: relative;
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: 20px 500px 100px 300px 100px 600px 100px 500px 200px 180px;
+	grid-template-rows: auto;
 }
 
 .wie {
 	position: absolute;
 	color: #377150;
 	grid-column: 2/5;
-	grid-row: 2/3;
+	grid-row: 5/6;
 	display: flex;
 	margin-right: 50px;
 	flex-direction: column;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
 
 
 .wieimage {
 
 	grid-column: 5/10;
-	grid-row: 2/3;
+	grid-row: 5/6;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
 
 .wieimage img {
@@ -129,7 +133,8 @@ body {
 	border-radius: 22px;
 }
 
-.samenwerkingen {
+
+.amis {
 	display: flex;
 	text-align: center;
 	grid-column: 1/11;
@@ -137,36 +142,9 @@ body {
 	justify-content: center;
 }
 
-
-.samenwerkfotos {
-	grid-column: 1/11;
-	grid-row: 4/5;
-	display: flex;
-	justify-content: space-around;
-
-}
-
-.samenwerkfotos img {
-	width: 100%;
-}
-
-.samenwerkfotos div {
-	width: 20%;
-	height: 20%;
-	text-align: center;
-}
-
-.amis {
-	display: flex;
-	text-align: center;
-	grid-column: 1/11;
-	grid-row: 5/6;
-	justify-content: center;
-}
-
 .amispic {
 	grid-column: 1/11;
-	grid-row: 6/7;
+	grid-row: 4/5;
 	display: flex;
 	justify-content: center;
 
@@ -177,43 +155,6 @@ body {
 
 }
 
-
-.voorstel {
-	display: flex;
-	text-align: center;
-	grid-column: 1/11;
-	grid-row: 7/8;
-	justify-content: center;
-}
-
-.voorstellen {
-	grid-column: 3/9;
-	grid-row: 8/9;
-}
-
-.voorstellen img {
-	width: 100%;
-	display: flex;
-	border-radius: 22px;
-}
-
-.interview {
-	grid-column: 3/6;
-	grid-row: 9/10;
-}
-
-.interview img {
-	width: 100%;
-	border-radius: 22px;
-}
-
-.interviewtext {
-	grid-column: 6/9;
-	grid-row: 9/10;
-	margin-left: 20px;
-	display: flex;
-	align-self: center;
-}
 
 .water2 {
 
@@ -228,7 +169,13 @@ body {
 
 .title2 {
 	position: absolute;
-	left: 350px;
+	grid-column: 2/5;
+	grid-row: 2/3;
+	font-weight: 700;
+	font-size: 16pt;
+	line-height: 20px;
+	left: 45%;
+
 
 }
 
@@ -236,16 +183,6 @@ img.water2 {
 	transform: rotate(180deg);
 }
 
-span {
-	color: #88c0bd;
-}
-
-p.light {
-	color: #88c0bd;
-	font-size: 20px;
-
-
-}
 
 
 p {
@@ -253,7 +190,12 @@ p {
 	font-family: azo-sans-web, sans-serif;
 	font-weight: 500;
 	font-style: normal;
+	font-size: 12pt;
 
+}
+
+span {
+	color: #88c0bd;
 }
 
 h1 {
@@ -322,22 +264,13 @@ h3 {
 
 
 
-/*
 
-.bad {
-	position: absolute;
-	margin-left: 325px;
-	margin-top: -550px;
-	width: 700px;
-	z-index: 0;
-	border-radius: 22px;
-}
 
 #slider {
-	margin: 0 auto;
-	width: 800px;
-	max-width: 100%;
+	padding-top: 50px;
+	width: 100%;
 	text-align: center;
+	grid-column: 2/10;
 }
 
 #slider input[type="radio"] {
@@ -382,7 +315,7 @@ h3 {
 	transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
 	width: 400%;
 	line-height: 0;
-	height: 300px;
+	height: 400px;
 }
 
 #slides .slide {
@@ -396,19 +329,19 @@ h3 {
 }
 
 #slides .slide_1 {
-	background: #00171f;
+	background: #377150;
 }
 
 #slides .slide_2 {
-	background: #003459;
+	background: #88C0BD;
 }
 
 #slides .slide_3 {
-	background: #007ea7;
+	background: #377150;
 }
 
 #slides .slide_4 {
-	background: #00a8e8;
+	background: #88C0BD;
 }
 
 #controls {
@@ -435,7 +368,7 @@ h3 {
 #slide2:checked~#controls label:nth-child(3),
 #slide3:checked~#controls label:nth-child(4),
 #slide4:checked~#controls label:nth-child(1) {
-	background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+	background: url(afbeeldingen/logo/logo-new.svg) no-repeat;
 	float: right;
 	margin: 0 -50px 0 0;
 	display: block;
@@ -445,7 +378,7 @@ h3 {
 #slide2:checked~#controls label:nth-last-child(3),
 #slide3:checked~#controls label:nth-last-child(4),
 #slide4:checked~#controls label:nth-last-child(1) {
-	background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+	background: url(afbeeldingen/logo/logo-new.svg) no-repeat;
 	float: left;
 	margin: 0 0 0 -50px;
 	display: block;
@@ -470,6 +403,10 @@ h3 {
 #slide3:checked~#bullets label:nth-child(3),
 #slide4:checked~#bullets label:nth-child(4) {
 	background: #444;
+}
+
+.slidepic {
+	width: 100%;
 }
 
 @media screen and (max-width: 900px) {
