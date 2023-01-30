@@ -280,11 +280,11 @@ h3 {
 #slider label {
 	cursor: pointer;
 	text-decoration: none;
+
 }
 
 #slides {
 	padding: 10px;
-	border: 3px solid #ccc;
 	background: #fff;
 	position: relative;
 	z-index: 1;
@@ -293,10 +293,12 @@ h3 {
 #overflow {
 	width: 100%;
 	overflow: hidden;
+	border-radius: 22px;
 }
 
 #slide1:checked~#slides .inner {
 	margin-left: 0;
+
 }
 
 #slide2:checked~#slides .inner {
@@ -316,6 +318,7 @@ h3 {
 	width: 400%;
 	line-height: 0;
 	height: 400px;
+
 }
 
 #slides .slide {
@@ -326,22 +329,27 @@ h3 {
 	align-items: center;
 	height: 100%;
 	color: #fff;
+
 }
 
 #slides .slide_1 {
 	background: #377150;
+
 }
 
 #slides .slide_2 {
 	background: #88C0BD;
+
 }
 
 #slides .slide_3 {
 	background: #377150;
+
 }
 
 #slides .slide_4 {
 	background: #88C0BD;
+
 }
 
 #controls {
@@ -357,7 +365,7 @@ h3 {
 	display: none;
 	width: 50px;
 	height: 50px;
-	opacity: 0.4;
+	opacity: 0.7;
 }
 
 #controls label:hover {
@@ -370,7 +378,7 @@ h3 {
 #slide4:checked~#controls label:nth-child(1) {
 	background: url(afbeeldingen/svg/arrowsliderR.svg) no-repeat;
 	float: right;
-	margin: -40px -70px 0 0;
+	margin: -40px 0px 0 0;
 	display: block;
 }
 
@@ -380,7 +388,7 @@ h3 {
 #slide4:checked~#controls label:nth-last-child(1) {
 	background: url(afbeeldingen/svg/arrowsliderL.svg) no-repeat;
 	float: left;
-	margin: -40px 0 0 -50px;
+	margin: -40px 0 0 20px;
 	display: block;
 }
 
@@ -407,6 +415,7 @@ h3 {
 
 .slidepic {
 	width: 100%;
+	border-radius: 22px;
 }
 
 @media screen and (max-width: 900px) {
