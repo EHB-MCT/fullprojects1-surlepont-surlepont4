@@ -368,9 +368,9 @@ h3 {
 #slide2:checked~#controls label:nth-child(3),
 #slide3:checked~#controls label:nth-child(4),
 #slide4:checked~#controls label:nth-child(1) {
-	background: url(afbeeldingen/logo/logo-new.svg) no-repeat;
+	background: url(afbeeldingen/svg/arrowsliderR.svg) no-repeat;
 	float: right;
-	margin: 0 -50px 0 0;
+	margin: -40px -70px 0 0;
 	display: block;
 }
 
@@ -378,9 +378,9 @@ h3 {
 #slide2:checked~#controls label:nth-last-child(3),
 #slide3:checked~#controls label:nth-last-child(4),
 #slide4:checked~#controls label:nth-last-child(1) {
-	background: url(afbeeldingen/logo/logo-new.svg) no-repeat;
+	background: url(afbeeldingen/svg/arrowsliderL.svg) no-repeat;
 	float: left;
-	margin: 0 0 0 -50px;
+	margin: -40px 0 0 -50px;
 	display: block;
 }
 
