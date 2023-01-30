@@ -35,11 +35,12 @@ body {
 }
 
 .nav {
-	grid-column: 6/13;
+	grid-column: 7/13;
 	color: black;
-	font-family: azo-sans-web, sans-serif;
-	font-weight: 700;
-	font-size: 16pt;
+	font-family: "roc-grotesk-condensed", sans-serif;
+	font-weight: 600;
+	font-size: 18pt;
+	font-style: normal;
 	font-style: normal;
 
 	float: right;
