@@ -52,6 +52,7 @@ body {
 	text-decoration: none;
 	color: #377150;
 	line-height: 35px;
+
 }
 
 .logo img {
@@ -70,13 +71,16 @@ body {
 	grid-template-rows: 400px 180px auto 180px 400px;
 }
 
+
 .water {
+
 	grid-column: 2/12;
 	grid-row: 2/3;
 	position: relative;
 	display: flex;
 	align-self: flex-end;
 	width: 85%;
+
 }
 
 .title {
@@ -88,7 +92,10 @@ body {
 	line-height: 20px;
 	left: 12%;
 	top: 30%;
+
 }
+
+
 
 .kader {
 	grid-column: 2/12;
@@ -112,7 +119,9 @@ body {
 	margin-top: 50px;
 }
 
+
 .wieimage {
+
 	grid-column: 5/10;
 	grid-row: 5/6;
 	margin-bottom: 50px;
@@ -123,6 +132,7 @@ body {
 	width: 110%;
 	border-radius: 22px;
 }
+
 
 .amis {
 	display: flex;
@@ -137,13 +147,17 @@ body {
 	grid-row: 4/5;
 	display: flex;
 	justify-content: center;
+
 }
 
 .amispic img {
 	height: 100%;
+
 }
 
+
 .water2 {
+
 	grid-column: 5/12;
 	grid-row: 4/5;
 	position: relative;
@@ -161,11 +175,15 @@ body {
 	font-size: 16pt;
 	line-height: 20px;
 	left: 45%;
+
+
 }
 
 img.water2 {
 	transform: rotate(180deg);
 }
+
+
 
 p {
 	color: black;
@@ -173,6 +191,7 @@ p {
 	font-weight: 500;
 	font-style: normal;
 	font-size: 12pt;
+
 }
 
 span {
@@ -184,6 +203,7 @@ h1 {
 	font-family: "roc-grotesk-condensed", sans-serif;
 	font-weight: 600;
 	font-style: normal;
+
 }
 
 h2 {
@@ -202,7 +222,7 @@ h3 {
 }
 
 .taalbtn {
-	color: #88c0bd;
+	color: #88C0BD;
 	grid-column: 4/5;
 	font-family: "azo-sans-web", sans-serif;
 	font-weight: 700;
@@ -233,12 +253,18 @@ h3 {
 }
 
 .dropdown a:hover {
-	background-color: #f1f1f1;
+	background-color: #f1f1f1
 }
 
 .taal:hover .dropdown {
 	display: block;
 }
+
+
+
+
+
+
 
 #slider {
 	padding-top: 50px;
@@ -307,7 +333,7 @@ h3 {
 }
 
 #slides .slide_2 {
-	background: #88c0bd;
+	background: #88C0BD;
 }
 
 #slides .slide_3 {
@@ -315,7 +341,7 @@ h3 {
 }
 
 #slides .slide_4 {
-	background: #88c0bd;
+	background: #88C0BD;
 }
 
 #controls {
@@ -400,8 +426,4 @@ h3 {
 		max-width: calc(100% - 140px);
 		margin: 0 auto;
 	}
-}
-
-.kader {
-	grid-column: 5/6;
 }
