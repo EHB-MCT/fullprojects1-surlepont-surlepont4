@@ -69,7 +69,7 @@ body {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 400px 180px 20px 650px 180px 180px 180px 180px 180px 180px 180px 180px 180px;
+	grid-template-rows: 400px 180px 650px 180px 180px 180px 180px 180px 180px 180px;
 }
 
 .water {
@@ -131,20 +131,37 @@ h3 {
 }
 
 .pijl1 {
-	position: absolute;
-	margin-left: -680px;
-	margin-top: 150px;
-	width: 25px;
+	grid-row: 3/4;
+	grid-column: 2/3;
+	width: 30%;
 	z-index: 2;
 }
 
 .pijl2 {
-	position: absolute;
-	margin-left: -140px;
-	margin-top: 150px;
-	width: 25px;
-	transform: rotate(180deg);
+	grid-row: 3/4;
+	grid-column: 7/8;
+	width: 30%;
 	z-index: 2;
+	transform: rotate(180deg);
+}
+
+.debat {
+	grid-column: 2/12;
+	grid-row: 11/12;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.debat p {
+	grid-column: 8/10;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.debat img {
+	border-radius: 22px;
 }
 
 .images {
@@ -162,12 +179,30 @@ p {
 
 .info {
 	grid-column: 2/9;
-	grid-row: 7/8;
+	grid-row: 6/7;
 }
 
 .renders {
-	grid-column: 9/12;
-	grid-row: 4/11;
+	grid-column: 8/12;
+	grid-row: 2/11;
+}
+
+.open {
+	grid-column: 1/12;
+	grid-row: 7/11;
+}
+
+.info2 {
+	grid-column: 3/9;
+	grid-row: 10/11;
+}
+
+.open h1 {
+	text-align: center;
+}
+
+.imageO {
+	width: 100%;
 }
 
 #slider {
