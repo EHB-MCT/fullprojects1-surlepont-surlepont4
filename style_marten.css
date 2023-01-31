@@ -739,6 +739,7 @@ h3 {
 	background-image: url(/afbeeldingen/backgrounds/achtergrond_contact.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	
 	background-size: 100%;
 }
 
@@ -749,6 +750,7 @@ h3 {
 
 .reveal.active {
 	opacity: 1;
+	
 }
 
 .active.fade-left {
@@ -765,4 +767,8 @@ h3 {
 		transform: translateX(0);
 		opacity: 1;
 	}
+}
+
+.container.reveal.fade-left.active {
+	height: 1000px;
 }

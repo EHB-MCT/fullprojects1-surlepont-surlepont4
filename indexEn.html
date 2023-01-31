@@ -1,3 +1,5 @@
+</html>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,8 +10,19 @@
     <title>Home</title>
     <link rel="stylesheet" href="style_Marten.css" />
     <link rel="stylesheet" href="https://use.typekit.net/fhq6ydu.css" />
+    <link rel="stylesheet" href="menu.css" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="java.js" type="module"></script>
 </head>
+<script defer>
+    function menu(x) {
+        if (document.getElementById("overlay").style.display != "block") {
+            document.getElementById("overlay").style.display = "block";
+        } else {
+            document.getElementById("overlay").style.display = "none";
+        }
+    }
+</script>
 
 <body>
 
@@ -20,21 +33,42 @@
             </div>
 
             <div class="taal">
-                <button class="taalbtn">EN</button>
+                <button class="taalbtn">NL</button>
                 <div class="dropdown">
                     <a href="#">FR</a>
-                    <a href="index.html">NL</a>
+                    <a href="indexEn.html">EN</a>
                 </div>
             </div>
 
             <div class="nav">
                 <a href="index.html">Home</a>
-                <a href="geschiedenis.html">History</a>
-                <a href="toekomst.html">Future</a>
+                <a href="geschiedenis.html">Geschiedenis</a>
+                <a href="toekomst.html">Toekomst</a>
                 <a href="contact.html">contact</a>
+
             </div>
         </div>
     </div>
+    </div>
+
+    <div class='menu'>
+        <div class='ikona' onclick='menu(this)'>
+            <div class='d'></div>
+            <div class='d'></div>
+            <div class='d'></div>
+
+            <div class='overlay' id="overlay">
+                <div class='list'>
+                    <a href='index.html'>Home</a>
+                    <a href='geschiedenis.html'>Geschiedenis</a>
+                    <a href='toekomst.html'>Toekomst</a>
+                    <a href='contact.html'>Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
@@ -49,6 +83,7 @@
         <div class="water">
             <img class="water" src="afbeeldingen/svg/water.svg" alt="" />
             <div class="title">
+                <h1>Pierre Marchant:</h1>
                 <h1>ceci n'est pas un route</h1>
                 <h2>it's a great place to be</h2>
 
@@ -105,23 +140,26 @@
             </div>
 
             <div class="wie">
-                <h3>Who are <span>we</span></h3>
-                <p>Surlepont is a group of inhabitants of Anderlecht who like the Pierre Marchant bridge as a viewing
-                    platform
-                    rest-point, green urban and social place.
-                    <br>
-                    <br>
-                    Soon there will be a decision about the future of the bridge. Surlepont wants to give all
-                    inhabitants
-                    and peasants a voice who value this place and sustainable mobility
-                </p>
+                <div class="wietext">
+                    <h3>Who are <span>we</span></h3>
+                    <p>Surlepont is a group of inhabitants of Anderlecht who like the Pierre Marchant bridge as a
+                        viewing
+                        platform
+                        rest-point, green urban and social place.
+                        <br>
+                        <br>
+                        Soon there will be a decision about the future of the bridge. Surlepont wants to give all
+                        inhabitants
+                        and peasants a voice who value this place and sustainable mobility
+                    </p>
+                </div>
 
-
+                <div class="wieimage">
+                    <img src="afbeeldingen/vergader.jpg" alt="" />
+                </div>
             </div>
 
-            <div class="wieimage">
-                <img src="afbeeldingen/vergader.jpg" alt="" />
-            </div>
+
 
 
 
@@ -147,6 +185,11 @@
 
         </div>
 
+        <div class="section">
+            <div class="container reveal fade-left">
+                <div class="trans"></div>
+            </div>
+        </div>
 
     </div>
 
@@ -161,24 +204,6 @@
 
 
 
-
-</body>
-
-</html>
-
-
-
-
-<!--
-<div class="grid">
-	
-		
-		<h1 class="wie">Wie zijn <span style="color: #88c0bd">wij</span>?</h1>
-		<p></p>
-		<p></p>
-		
-	</div>
-</div>
 
 </body>
 

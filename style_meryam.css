@@ -16,11 +16,10 @@
      height: 80px;
      background-color: white;
      box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.215);
-     z-index: 20;
+     z-index: 999;
  }
 
  .header_grid {
-
      display: grid;
      grid-template-columns: repeat(12, 1fr);
      grid-template-rows: 100%;
@@ -29,36 +28,35 @@
 
  .taal {
      grid-column: 4/5;
-     font-family: "azo-sans-web", sans-serif;
+     font-family: azo-sans-web, sans-serif;
      font-weight: 700;
      font-size: 10pt;
-
  }
 
  .taal a {
      text-decoration: none;
-     color: #88C0BD;
-
+     color: #88c0bd;
  }
 
  .nav {
-     grid-column: 6/13;
-     color: #377150;
-     font-family: "azo-sans-web", sans-serif;
-     font-weight: 700;
-     font-size: 16pt;
+     grid-column: 7/13;
+     color: black;
+     font-family: "roc-grotesk-condensed", sans-serif;
+     font-weight: 600;
+     font-size: 18pt;
      font-style: normal;
+     font-style: normal;
+
      float: right;
-
-
  }
 
  .nav a {
      padding: auto 0 auto 0;
-     margin: 20px;
+     margin: 25px;
      text-decoration: none;
      color: #377150;
      line-height: 35px;
+
  }
 
  .logo img {
@@ -69,120 +67,7 @@
 
  .logo {
      grid-column: 2/3;
-
  }
-
- .grid {
-     display: grid;
-     grid-template-columns: repeat(12, 1fr);
-     grid-auto-rows: 100px auto;
-     grid-row-gap: 100px;
- }
-
- .kader {
-     background-color: white;
-     grid-column: 2/12;
-     grid-row: 3/10;
-     display: grid;
-     margin-bottom: 400px;
-     margin-top: 400px;
-
- }
-
- h1 {
-     font-family: "azo-sans-web", sans-serif;
-     color: #377150;
-     font-weight: 500;
-     font-style: normal;
- }
-
- .title {
-     grid-column: 3/12;
-     grid-row: 1/3;
-     margin-top: -70px;
-     font-size: 40px;
-     font-family: "roc-grotesk-condensed", sans-serif;
-     font-weight: 600;
-     font-style: normal;
-     color: #377150;
- }
-
- .top {
-     width: 90%;
-     grid-column: 1/12;
-     grid-row-start: 1;
-     margin-top: -270px;
- }
-
- label {
-     margin-top: 20px;
-     margin-bottom: 20px;
-     grid-column: 2/6;
-     grid-row-start: 1;
-     font-family: "azo-sans-web", sans-serif;
-     color: #377150;
-     font-size: 20px;
-     font-weight: 500;
-     font-style: normal;
- }
-
- input {
-     grid-column: 2/6;
-     grid-row-start: 2;
-     border-color: #88C0BD;
-     border-style: solid;
-     border-radius: 22px;
-     height: 40px;
-     padding-left: 15px;
-     margin-bottom: 20px;
- }
-
- .email {
-     grid-column: 7/11;
-     margin-left: 20px;
- }
-
- .bericht1 {
-     margin-top: 20px;
-     margin-bottom: 20px;
-     grid-column: 2/11;
-     grid-row-start: 3;
- }
-
- .bericht2 {
-     grid-column: 2/11;
-     grid-row-start: 4;
-     height: 200px;
- }
-
- .bottom {
-     transform: rotate(180deg);
-     grid-column: 1/12;
-     grid-row-start: 6;
-     margin-left: 10%;
-     width: 90%;
-     margin-bottom: -280px;
- }
-
- .stuur {
-     grid-column: 5/8;
-     height: 40px;
-     border-radius: 22px;
-     border: none;
-     background-color: #377150;
-     color: white;
-     font-size: 20px;
-     font-family: "azo-sans-web", sans-serif;
-     font-weight: 500;
-     font-style: normal;
- }
-
- .stuur:hover {
-     cursor: pointer;
-     background-color: #88C0BD;
- }
-
- /* taal */
 
  .taalbtn {
      color: #88C0BD;
@@ -225,4 +110,234 @@
 
  .taal:hover .taalbtn {
      background-color: white;
+ }
+
+
+
+
+
+
+ .grid {
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: 400px 180px auto 180px 400px;
+ }
+
+
+
+
+ h1 {
+     font-family: "azo-sans-web", sans-serif;
+     color: #377150;
+     font-weight: 500;
+     font-style: normal;
+ }
+
+
+ .kader {
+     background-color: white;
+     grid-column: 2/12;
+     grid-row: 3/4;
+     display: grid;
+     grid-template-columns: repeat(10, 1fr);
+     grid-template-rows: 500px;
+ }
+
+
+ .water {
+
+     grid-column: 2/12;
+     grid-row: 2/3;
+     position: relative;
+     display: flex;
+     align-self: flex-end;
+     width: 85%;
+
+ }
+
+ .water2 {
+
+     grid-column: 5/12;
+     grid-row: 4/5;
+     position: relative;
+     display: flex;
+     align-self: flex-start;
+     justify-content: flex-end;
+     width: 100%;
+ }
+
+ .title {
+     position: absolute;
+     grid-column: 2/5;
+     grid-row: 2/3;
+     font-weight: 700;
+     font-size: 16pt;
+     line-height: 20px;
+     left: 20%;
+     top: 40%;
+
+     z-index: 10;
+ }
+
+ .title h1 {
+     font-size: 34pt;
+ }
+
+
+ /*
+ label {
+     margin-top: 20px;
+     margin-bottom: 20px;
+     grid-column: 2/6;
+     grid-row-start: 1;
+     font-family: "azo-sans-web", sans-serif;
+     color: #377150;
+     font-size: 20px;
+     font-weight: 500;
+     font-style: normal;
+ }
+
+ input {
+     grid-column: 2/6;
+     grid-row-start: 2;
+     border-color: #88C0BD;
+     border-style: solid;
+     border-radius: 22px;
+     height: 40px;
+     padding-left: 15px;
+     margin-bottom: 20px;
+ }
+
+ .email {
+     grid-column: 7/11;
+     margin-left: 20px;
+ }
+
+ .bericht1 {
+     margin-top: 20px;
+     margin-bottom: 20px;
+     grid-column: 2/11;
+     grid-row-start: 3;
+ }
+
+ .bericht2 {
+     grid-column: 2/11;
+     grid-row-start: 4;
+     height: 200px;
+ }
+
+ .stuur {
+     grid-column: 5/8;
+     height: 40px;
+     border-radius: 22px;
+     border: none;
+     background-color: #377150;
+     color: white;
+     font-size: 20px;
+     font-family: "azo-sans-web", sans-serif;
+     font-weight: 500;
+     font-style: normal;
+ }
+
+ .stuur:hover {
+     cursor: pointer;
+     background-color: #88C0BD;
+ }
+
+*/
+
+
+ @media all and (max-width: 950px) {
+
+     .grid {
+         grid-template-rows: 150px 180px auto 180px 400px;
+     }
+ }
+
+ @media all and (max-width: 700px) {
+
+     .header {
+         position: fixed;
+         width: 100%;
+         height: 50px;
+         background-color: white;
+         box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.215);
+         z-index: 999;
+     }
+
+     .header_grid {
+         display: grid;
+         grid-template-columns: repeat(12, 1fr);
+         grid-template-rows: 100%;
+         align-items: center;
+     }
+
+     .taal {
+         grid-column: 5/6;
+         font-family: azo-sans-web, sans-serif;
+         font-weight: 700;
+         font-size: 10pt;
+     }
+
+     .taal a {
+         text-decoration: none;
+         color: #88c0bd;
+     }
+
+     .nav {
+         grid-column: 7/13;
+         color: black;
+         font-family: "roc-grotesk-condensed", sans-serif;
+         font-weight: 600;
+         font-size: 18pt;
+         font-style: normal;
+         font-style: normal;
+         display: none;
+         float: right;
+     }
+
+     .nav a {
+         padding: auto 0 auto 0;
+         margin: 40px;
+         text-decoration: none;
+         color: #377150;
+         line-height: 35px;
+
+     }
+
+     .logo img {
+
+         max-width: 50%;
+         position: center;
+     }
+
+     .logo {
+         grid-column: 2/4;
+
+     }
+
+     .grid {
+         grid-template-rows: 100px 180px auto 180px 400px;
+     }
+
+     .nav {
+         display: none;
+     }
+
+ }
+
+ @media all and (max-width: 500px) {
+
+     .title h1 {
+         font-size: 25pt;
+     }
+
+
+
+     .grid {
+         grid-template-rows: 50px 180px auto 180px 400px;
+     }
+
+
+
  }

@@ -7,9 +7,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Sur Le Pont</title>
 	<link rel="stylesheet" href="style_meryam.css" />
+	<link rel="stylesheet" href="menu.css" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.typekit.net/fhq6ydu.css" />
+
 </head>
+<script defer>
+	function menu(x) {
+		if (document.getElementById("overlay").style.display != "block") {
+			document.getElementById("overlay").style.display = "block";
+		} else {
+			document.getElementById("overlay").style.display = "none";
+		}
+	}
+</script>
 
 <body>
 	<div class="header">
@@ -30,17 +41,42 @@
 				<a href="index.html">Home</a>
 				<a href="geschiedenis.html">Geschiedenis</a>
 				<a href="toekomst.html">Toekomst</a>
-				<a href="contact.html">contact</a>
+				<a href="contact.html">Contact</a>
 			</div>
 		</div>
 	</div>
 
+	<div class='menu'>
+		<div class='ikona' onclick='menu(this)'>
+			<div class='d'></div>
+			<div class='d'></div>
+			<div class='d'></div>
+
+			<div class='overlay' id="overlay">
+				<div class='list'>
+					<a href='index.html'>Home</a>
+					<a href='geschiedenis.html'>Geschiedenis</a>
+					<a href='toekomst.html'>Toekomst</a>
+					<a href='contact.html'>Contact</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	<div class="grid">
 
-		<div class=" kader">
-			<img class="top" src="/afbeeldingen/svg/water.svg" />
-			<h1 class="title">Contact</h1>
+		<div class="water">
+			<img class="water" src="afbeeldingen/svg/water.svg" alt="" />
+			<div class="title">
+				<h1>Contact</h1>
+			</div>
+		</div>
 
+
+		<div class=" kader">
+
+			<!--
 			<label for="name">Naam</label>
 			<input type="text">
 
@@ -51,11 +87,17 @@
 			<input class="bericht2" type="text">
 
 			<button class="stuur" type="submit" action="mailto">Stuur</button>
+-->
+		</div>
 
-			<img class="bottom" src="/afbeeldingen/svg/water.svg" />
+		<div class="water2">
+			<img class="water" src="afbeeldingen/svg/wateronder.svg" alt="" />
 		</div>
 
 	</div>
+
+
+
 </body>
 
 </html>
