@@ -96,7 +96,7 @@ body {
 	grid-row: 3/4;
 	background-color: white;
 	display: grid;
-	/*grid-template-columns: repeat(12, 1fr);*/
+
 }
 
 .water2 {
