@@ -724,3 +724,47 @@ h3 {
 
 
 }
+
+
+/* img transition */
+
+
+.section {
+	min-height: 100vh;
+	display: grid;
+	/*grid-template-columns: repeat(12, 1fr);*/
+}
+
+.section .container {
+	background-image: url(/afbeeldingen/backgrounds/achtergrond_contact.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	grid-row-start: 5;
+	grid-column: 1/13;
+}
+
+.reveal {
+	position: relative;
+	opacity: 0;
+}
+
+.reveal.active {
+	opacity: 1;
+}
+
+.active.fade-left {
+	animation: fade-left 1s ease-in;
+}
+
+@keyframes fade-left {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
