@@ -1,92 +1,88 @@
-a {
-    text-decoration: none;
-    color: #377150;
-    transition: color 0.2s;
-    padding: 8px;
-    font-family: "roc-grotesk-condensed", sans-serif;
-    font-weight: 600;
-    font-size: 18pt;
-}
-
-a:hover {
-    color: #88c0bd;
-}
-
-.menu {
-    position: fixed;
-    z-index: 999;
-    grid-column: 10/11;
-    display: none;
-}
-
-.ikona {
-    margin: 20px;
-}
-
-.d {
-    width: 35px;
-    height: 5px;
-    background: #377150;
-    margin: 6px;
-    border-radius: 3px;
-    cursor: pointer;
-    z-index: 1;
-    transition: 0.6s;
-}
-
-.d:hover:nth-child(2) {
-    transform: translateX(2px);
-}
-
-.overlay {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 251, 251, 0.6);
-    overflow-x: hidden;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.overlay a {
-    padding: 8px;
-    font-size: 36px;
-    display: block;
-}
-
-.list {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.anim .overlay {
-    opacity: 1;
-}
-
-.anim .d:nth-child(1) {
-    transform: rotate(405deg) translate(5px, 10px);
-}
-
-.anim .d:nth-child(2) {
-    transform: translateX(35px);
-    opacity: 0;
-}
-
-.anim .d:nth-child(3) {
-    transform: rotate(-405deg) translate(5px, -10px);
-}
-
 @media all and (max-width: 700px) {
+
+    a {
+        text-decoration: none;
+        color: #377150;
+        transition: color 0.2s;
+        padding: 8px;
+        font-family: "roc-grotesk-condensed", sans-serif;
+        font-weight: 600;
+        font-size: 18pt;
+    }
+
+    a:hover {
+        color: #88c0bd;
+    }
+
     .menu {
-        display: block;
+        position: fixed;
+        z-index: 999;
+        grid-column: 10/11;
         margin-left: 80%;
         margin-top: -10px;
+    }
+
+    .ikona {
+        margin: 20px;
+    }
+
+    .d {
+        width: 35px;
+        height: 5px;
+        background: #377150;
+        margin: 6px;
+        border-radius: 3px;
+        cursor: pointer;
+        z-index: 1;
+        transition: 0.6s;
+    }
+
+    .d:hover:nth-child(2) {
+        transform: translateX(2px);
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 251, 251, 0.6);
+        overflow-x: hidden;
+        transition: opacity 0.3s;
+        display: none;
+    }
+
+    .overlay a {
+        padding: 8px;
+        font-size: 36px;
+        display: block;
+    }
+
+    .list {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .anim .overlay {
+        opacity: 1;
+    }
+
+    .anim .d:nth-child(1) {
+        transform: rotate(405deg) translate(5px, 10px);
+    }
+
+    .anim .d:nth-child(2) {
+        transform: translateX(35px);
+        opacity: 0;
+    }
+
+    .anim .d:nth-child(3) {
+        transform: rotate(-405deg) translate(5px, -10px);
     }
 
 }
