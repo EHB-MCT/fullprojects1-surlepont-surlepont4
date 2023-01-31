@@ -169,6 +169,28 @@ h3 {
 	border-radius: 22px;
 }
 
+.link {
+	background-color: #377150;
+	color: #f1f1f1;
+	font-family: "roc-grotesk-condensed", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	border-radius: 30px;
+	padding: 20px;
+	text-decoration: none;
+	width: 80px;
+	height: 10px;
+	margin-top: -90px;
+	margin-left: 10px;
+	text-align: center;
+	grid-column: 7/8;
+	grid-row: 2/3;
+}
+
+.link:hover {
+	background-color: #88c0bd;
+}
+
 .images {
 	grid-column: 2/12;
 	grid-row: 1/ 12;
