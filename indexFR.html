@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Home</title>
+	<link rel="stylesheet" href="style_Marten.css" />
+	<link rel="stylesheet" href="https://use.typekit.net/fhq6ydu.css" />
+	<link rel="stylesheet" href="menu.css" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<script src="java.js" type="module"></script>
+</head>
+<script defer>
+	function menu(x) {
+		if (document.getElementById("overlay").style.display != "block") {
+			document.getElementById("overlay").style.display = "block";
+		} else {
+			document.getElementById("overlay").style.display = "none";
+		}
+	}
+</script>
+
+<body>
+
+	<div class="header">
+		<div class="header_grid">
+			<div class="logo">
+				<img src="afbeeldingen/logo/logo-new.svg" alt="" />
+			</div>
+
+			<div class="taal">
+				<button class="taalbtn">NL</button>
+				<div class="dropdown">
+					<a href="#">FR</a>
+					<a href="indexEn.html">EN</a>
+				</div>
+			</div>
+
+			<div class="nav">
+				<a href="index.html">Home</a>
+				<a href="geschiedenis.html">Geschiedenis</a>
+				<a href="toekomst.html">Toekomst</a>
+				<a href="contact.html">Contact</a>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class='menu'>
+		<div class='ikona' onclick='menu(this)'>
+			<div class='d'></div>
+			<div class='d'></div>
+			<div class='d'></div>
+
+			<div class='overlay' id="overlay">
+				<div class='list'>
+					<a href='index.html'>Home</a>
+					<a href='geschiedenis.html'>Geschiedenis</a>
+					<a href='toekomst.html'>Toekomst</a>
+					<a href='contact.html'>Contact</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="grid">
+
+
+
+
+
+		<div class="water">
+			<img class="water" src="afbeeldingen/svg/water.svg" alt="" />
+			<div class="title">
+				<h1>Pierre Marchant:</h1>
+				<h1>ceci n'est pas un route</h1>
+				<h2>it's a great place to be</h2>
+
+			</div>
+
+		</div>
+
+		<div class="kader">
+
+			<div id="slider">
+				<input type="radio" name="slider" id="slide1" checked />
+				<input type="radio" name="slider" id="slide2" />
+				<input type="radio" name="slider" id="slide3" />
+				<input type="radio" name="slider" id="slide4" />
+				<div id="slides">
+					<div id="overflow">
+						<div class="inner">
+							<div class="slide slide_1">
+								<div class="slide-content">
+									<img class="slidepic" src="afbeeldingen/familie.jpg">
+								</div>
+							</div>
+							<div class="slide slide_2">
+								<div class="slide-content">
+									<img class="slidepic" src="afbeeldingen/feest3.jpg">
+								</div>
+							</div>
+							<div class="slide slide_3">
+								<div class="slide-content">
+									<img class="slidepic" src="afbeeldingen/schaak4.jpg">
+								</div>
+							</div>
+							<div class="slide slide_4">
+								<div class="slide-content">
+									<img class="slidepic" src="afbeeldingen/feest.jpg">
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div id="controls">
+					<label for="slide1"></label>
+					<label for="slide2"></label>
+					<label for="slide3"></label>
+					<label for="slide4"></label>
+				</div>
+				<div id="bullets">
+					<label for="slide1"></label>
+					<label for="slide2"></label>
+					<label for="slide3"></label>
+					<label for="slide4"></label>
+				</div>
+			</div>
+
+			<div class="wie">
+				<div class="wietext">
+					<h3>Wie zijn <span>wij</span></h3>
+					<p>Surlepont is een groep inwo-ners vanAnderlecht die ijvert voor het behoud van de Pierre
+						Mar-chantbrug
+						als
+						uitkijkplek, rust-punt, groene as en stedelijke sociale ruimte.
+						<br>
+						<br>
+						Binnenkort valt er een beslis-sing over de toekomst van deze brug. Surlepont wil alle inwo-ners
+						en
+						passanten
+						een stem geven die deze plek naar waarde schatten en gewonnen zijn voor duurzame mobiliteit.
+					</p>
+				</div>
+
+				<div class="wieimage">
+					<img src="afbeeldingen/vergader.jpg" alt="" />
+				</div>
+			</div>
+
+
+
+
+
+			<div class="amis">
+				<h3>De <span>vrienden</span> van de brug</h3>
+			</div>
+
+			<div class="amispic">
+				<img src="afbeeldingen/amis/amis.png">
+			</div>
+
+
+		</div>
+
+
+
+		<div class="water2">
+			<img class="water" src="afbeeldingen/svg/wateronder.svg" alt="" />
+			<div class="title2">
+				<h1>Een happy place</h1>
+				<h2>en zo wil de buurt het houden</h2>
+			</div>
+
+		</div>
+
+		<div class="section">
+			<div class="container reveal fade-left">
+				<div class="trans"></div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
