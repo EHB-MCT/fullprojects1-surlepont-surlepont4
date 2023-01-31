@@ -12,7 +12,7 @@ body {
 	height: 80px;
 	background-color: white;
 	box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.215);
-	z-index: 2;
+	z-index: 999;
 }
 
 .header_grid {
@@ -48,7 +48,7 @@ body {
 
 .nav a {
 	padding: auto 0 auto 0;
-	margin: 20px;
+	margin: 25px;
 	text-decoration: none;
 	color: #377150;
 	line-height: 35px;
@@ -93,6 +93,8 @@ body {
 	left: 12%;
 	top: 30%;
 
+	z-index: 10;
+
 }
 
 
@@ -108,30 +110,29 @@ body {
 }
 
 .wie {
-	position: absolute;
+
 	color: #377150;
-	grid-column: 2/5;
+	grid-column: 2/11;
 	grid-row: 5/6;
 	display: flex;
 	margin-right: 50px;
-	flex-direction: column;
+	flex-direction: row;
 	margin-bottom: 50px;
-	margin-top: 50px;
+	margin-top: 15px;
 }
 
-
-.wieimage {
-
-	grid-column: 5/10;
-	grid-row: 5/6;
-	margin-bottom: 50px;
-	margin-top: 50px;
-}
-
-.wieimage img {
-	width: 110%;
+.wie img {
+	width: 100%;
 	border-radius: 22px;
+
 }
+
+.wie p {
+	padding-right: 60px;
+}
+
+
+
 
 
 .amis {
@@ -151,7 +152,7 @@ body {
 }
 
 .amispic img {
-	height: 100%;
+	width: 70%;
 
 }
 
@@ -174,7 +175,8 @@ body {
 	font-weight: 700;
 	font-size: 16pt;
 	line-height: 20px;
-	left: 45%;
+	left: 40%;
+	margin-top: -20px;
 
 
 }
@@ -203,6 +205,7 @@ h1 {
 	font-family: "roc-grotesk-condensed", sans-serif;
 	font-weight: 600;
 	font-style: normal;
+	z-index: 100;
 
 }
 
@@ -333,23 +336,19 @@ h3 {
 }
 
 #slides .slide_1 {
-	background: #377150;
-
+	background-color: #88c0bd;
 }
 
 #slides .slide_2 {
-	background: #88C0BD;
-
+	background-color: #88c0bd;
 }
 
 #slides .slide_3 {
-	background: #377150;
-
+	background-color: #88c0bd;
 }
 
 #slides .slide_4 {
-	background: #88C0BD;
-
+	background-color: #88c0bd;
 }
 
 #controls {
@@ -432,7 +431,296 @@ h3 {
 	}
 
 	#slides {
-		max-width: calc(100% - 140px);
+
 		margin: 0 auto;
 	}
+}
+
+@media all and (max-width: 1150px) {
+
+
+	#slide1:checked~#controls label:nth-last-child(2),
+	#slide2:checked~#controls label:nth-last-child(3),
+	#slide3:checked~#controls label:nth-last-child(4),
+	#slide4:checked~#controls label:nth-last-child(1) {
+		background: url(afbeeldingen/svg/arrowsliderL.svg) no-repeat;
+		float: left;
+		margin: -10% 0 0 5%;
+		display: block;
+	}
+
+	#slide1:checked~#controls label:nth-child(2),
+	#slide2:checked~#controls label:nth-child(3),
+	#slide3:checked~#controls label:nth-child(4),
+	#slide4:checked~#controls label:nth-child(1) {
+		background: url(afbeeldingen/svg/arrowsliderR.svg) no-repeat;
+		float: right;
+		margin: -10% 0px 0 0;
+		display: block;
+	}
+
+	.wie {
+		margin-left: -50px;
+	}
+
+	.wie p {
+		font-size: 14px;
+	}
+
+	.title {
+		font-size: 14pt;
+	}
+
+	.title2 {
+		font-size: 14pt;
+	}
+}
+
+@media all and (max-width: 1050px) {
+
+
+	.wie {
+		margin-left: -50px;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.wie p {
+		font-size: 12px;
+	}
+
+	.title {
+		font-size: 14pt;
+	}
+
+	.title2 {
+		font-size: 14pt;
+	}
+}
+
+@media all and (max-width: 950px) {
+
+
+
+
+	.grid {
+		grid-template-rows: 150px 180px auto 180px 400px;
+	}
+
+	.wie {
+		margin-left: auto;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.wie p {
+		font-size: 12px;
+	}
+
+	.title {
+		font-size: 12pt;
+	}
+
+	.title2 {
+		font-size: 12pt;
+		margin-top: -50px;
+	}
+
+	#slider {
+		grid-column: 2/10;
+		margin-top: 50px;
+	}
+}
+
+@media all and (max-width: 700px) {
+
+
+	.title2 {
+		margin-top: -50px;
+	}
+
+	.title h1 {
+		font-size: 20pt;
+	}
+
+	.title h2 {
+		font-size: 16pt;
+	}
+
+	.title2 h1 {
+		font-size: 20pt;
+	}
+
+	.title2 h2 {
+		font-size: 16pt;
+	}
+
+	#slide1:checked~#controls label:nth-child(2),
+	#slide2:checked~#controls label:nth-child(3),
+	#slide3:checked~#controls label:nth-child(4),
+	#slide4:checked~#controls label:nth-child(1) {
+		background: url(afbeeldingen/svg/arrowsliderR.svg) no-repeat;
+		float: right;
+		margin: 10px 0px 0 0;
+		display: block;
+	}
+
+	#slide1:checked~#controls label:nth-last-child(2),
+	#slide2:checked~#controls label:nth-last-child(3),
+	#slide3:checked~#controls label:nth-last-child(4),
+	#slide4:checked~#controls label:nth-last-child(1) {
+		background: url(afbeeldingen/svg/arrowsliderL.svg) no-repeat;
+		float: left;
+		margin: 10px 0 0 20px;
+		display: block;
+	}
+
+	.header {
+		position: fixed;
+		width: 100%;
+		height: 50px;
+		background-color: white;
+		box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.215);
+		z-index: 999;
+	}
+
+	.header_grid {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: 100%;
+		align-items: center;
+	}
+
+	.taal {
+		grid-column: 5/6;
+		font-family: azo-sans-web, sans-serif;
+		font-weight: 700;
+		font-size: 10pt;
+	}
+
+	.taal a {
+		text-decoration: none;
+		color: #88c0bd;
+	}
+
+	.nav {
+		grid-column: 7/13;
+		color: black;
+		font-family: "roc-grotesk-condensed", sans-serif;
+		font-weight: 600;
+		font-size: 18pt;
+		font-style: normal;
+		font-style: normal;
+		display: none;
+		float: right;
+	}
+
+	.nav a {
+		padding: auto 0 auto 0;
+		margin: 40px;
+		text-decoration: none;
+		color: #377150;
+		line-height: 35px;
+
+	}
+
+	.logo img {
+
+		max-width: 50%;
+		position: center;
+	}
+
+	.logo {
+		grid-column: 2/4;
+
+	}
+
+	.grid {
+		grid-template-rows: 100px 180px auto 180px 400px;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	#slides .inner {
+		height: 300px;
+
+	}
+}
+
+@media all and (max-width: 500px) {
+
+	.grid {
+		grid-template-rows: 50px 180px auto 180px 400px;
+	}
+
+
+	.wie {
+		margin-left: auto;
+		flex-direction: column;
+		text-align: center;
+
+	}
+
+	.wie p {
+		font-size: 12px;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.title {
+		font-size: 10pt;
+		margin-left: -10px;
+	}
+
+	.title2 h1 {
+		line-height: 30px;
+		font-size: 14pt;
+	}
+
+	.title2 h2 {
+		margin-top: -20px;
+		font-size: 10pt;
+	}
+
+	#slider {
+		grid-column: 2/10;
+	}
+
+
+
+
+
+	#slides .inner {
+		height: 200px;
+
+	}
+
+
+
+	#slide1:checked~#controls label:nth-child(2),
+	#slide2:checked~#controls label:nth-child(3),
+	#slide3:checked~#controls label:nth-child(4),
+	#slide4:checked~#controls label:nth-child(1) {
+		background: url(afbeeldingen/svg/arrowsliderR.svg) no-repeat;
+		float: right;
+		margin: 50px 0px 0 0;
+		display: block;
+	}
+
+	#slide1:checked~#controls label:nth-last-child(2),
+	#slide2:checked~#controls label:nth-last-child(3),
+	#slide3:checked~#controls label:nth-last-child(4),
+	#slide4:checked~#controls label:nth-last-child(1) {
+		background: url(afbeeldingen/svg/arrowsliderL.svg) no-repeat;
+		float: left;
+		margin: 50px 0 0 20px;
+		display: block;
+	}
+
+
+
+
+
 }
