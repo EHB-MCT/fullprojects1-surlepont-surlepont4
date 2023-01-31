@@ -11,10 +11,13 @@
 	<link rel="stylesheet" href="menu.css" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
-<script>
+<script defer>
 	function menu(x) {
-		x.classList.toggle('anim');
-		document.getElementById("overlay").style.display = "block";
+		if (document.getElementById("overlay").style.display != "block") {
+			document.getElementById("overlay").style.display = "block";
+		} else {
+			document.getElementById("overlay").style.display = "none";
+		}
 	}
 </script>
 
