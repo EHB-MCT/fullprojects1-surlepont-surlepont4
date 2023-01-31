@@ -8,8 +8,15 @@
 	<title>Home</title>
 	<link rel="stylesheet" href="style_Marten.css" />
 	<link rel="stylesheet" href="https://use.typekit.net/fhq6ydu.css" />
+	<link rel="stylesheet" href="menu.css" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
+<script>
+	function menu(x) {
+		x.classList.toggle('anim');
+		document.getElementById("overlay").style.display = "block";
+	}
+</script>
 
 <body>
 
@@ -23,7 +30,7 @@
 				<button class="taalbtn">NL</button>
 				<div class="dropdown">
 					<a href="#">FR</a>
-					<a href="#">EN</a>
+					<a href="indexEn.html">EN</a>
 				</div>
 			</div>
 
@@ -32,9 +39,30 @@
 				<a href="geschiedenis.html">Geschiedenis</a>
 				<a href="toekomst.html">Toekomst</a>
 				<a href="contact.html">contact</a>
+
 			</div>
 		</div>
 	</div>
+	</div>
+
+	<div class='menu'>
+		<div class='ikona' onclick='menu(this)'>
+			<div class='d'></div>
+			<div class='d'></div>
+			<div class='d'></div>
+
+			<div class='overlay' id="overlay">
+				<div class='list'>
+					<a href='index.html'>Home</a>
+					<a href='geschiedenis.html'>Geschiedenis</a>
+					<a href='toekomst.html'>Toekomst</a>
+					<a href='contact.html'>Contact</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 
 
@@ -49,6 +77,7 @@
 		<div class="water">
 			<img class="water" src="afbeeldingen/svg/water.svg" alt="" />
 			<div class="title">
+				<h1>Pierre Marchant:</h1>
 				<h1>ceci n'est pas un route</h1>
 				<h2>it's a great place to be</h2>
 
@@ -105,28 +134,32 @@
 			</div>
 
 			<div class="wie">
-				<h3>Wie zijn <span>wij</span></h3>
-				<p>Surlepont is een groep inwo-ners vanAnderlecht die ijvert voor het behoud van de Pierre Mar-chantbrug
-					als
-					uitkijkplek, rust-punt, groene as en stedelijke sociale ruimte.
-					<br>
-					<br>
-					Binnenkort valt er een beslis-sing over de toekomst van deze brug. Surlepont wil alle inwo-ners en
-					passanten
-					een stem geven die deze plek naar waarde schatten en gewonnen zijn voor duurzame mobiliteit.
-				</p>
+				<div class="wietext">
+					<h3>Wie zijn <span>wij</span></h3>
+					<p>Surlepont is een groep inwo-ners vanAnderlecht die ijvert voor het behoud van de Pierre
+						Mar-chantbrug
+						als
+						uitkijkplek, rust-punt, groene as en stedelijke sociale ruimte.
+						<br>
+						<br>
+						Binnenkort valt er een beslis-sing over de toekomst van deze brug. Surlepont wil alle inwo-ners
+						en
+						passanten
+						een stem geven die deze plek naar waarde schatten en gewonnen zijn voor duurzame mobiliteit.
+					</p>
+				</div>
 
-
+				<div class="wieimage">
+					<img src="afbeeldingen/vergader.jpg" alt="" />
+				</div>
 			</div>
 
-			<div class="wieimage">
-				<img src="afbeeldingen/vergader.jpg" alt="" />
-			</div>
+
 
 
 
 			<div class="amis">
-				<h3>Les <span>amis</span> du pont</h3>
+				<h3>De <span>vrienden</span> van de brug</h3>
 			</div>
 
 			<div class="amispic">
