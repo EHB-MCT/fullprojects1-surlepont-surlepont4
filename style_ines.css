@@ -90,7 +90,7 @@ body {
 	top: 30%;
 }
 
-.kader {
+.frame {
 	grid-column: 2/12;
 	grid-row: 3/11;
 	background-color: white;
@@ -130,7 +130,7 @@ h3 {
 	font-size: 34px;
 }
 
-.pijl1 {
+.arrow1 {
 	grid-row: 3/4;
 	grid-column: 2/3;
 	margin-top: 70px;
@@ -139,7 +139,7 @@ h3 {
 	z-index: 2;
 }
 
-.pijl2 {
+.arrow2 {
 	grid-row: 3/4;
 	grid-column: 7/8;
 	width: 30%;
@@ -149,7 +149,7 @@ h3 {
 	transform: rotate(180deg);
 }
 
-.debat {
+.debate {
 	grid-column: 2/12;
 	grid-row: 11/12;
 	width: 100%;
@@ -157,7 +157,7 @@ h3 {
 	flex-direction: row;
 }
 
-.debat p {
+.debate p {
 	grid-column: 7/8;
 	margin-left: 10px;
 	display: flex;
@@ -165,7 +165,7 @@ h3 {
 	margin-right: 110px;
 }
 
-.debat img {
+.debate img {
 	border-radius: 22px;
 }
 
