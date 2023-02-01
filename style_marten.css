@@ -67,7 +67,7 @@ body {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 400px 180px auto 180px 400px;
+	grid-template-rows: 400px 180px auto 180px 100px 400px;
 }
 
 .water {
@@ -660,15 +660,7 @@ h3 {
 .section {
 	height: 100%;
 	grid-column: 1/13;
-	grid-row: 5/6;
-}
-
-.section .container {
-	background-image: url(/afbeeldingen/backgrounds/achtergrond_contact.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-
-	background-size: 100%;
+	grid-row: 6/7;
 }
 
 .reveal {
@@ -698,4 +690,8 @@ h3 {
 
 .container.reveal.fade-left.active {
 	height: 1000px;
+}
+
+.trans img {
+	max-width: 100%;
 }
