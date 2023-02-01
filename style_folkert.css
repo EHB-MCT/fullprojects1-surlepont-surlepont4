@@ -3,9 +3,10 @@
 body {
 	margin: 0px;
 	background-image: url(afbeeldingen/backgrounds/achtergrond_geschiedenis.png);
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-position: center;
 }
 
 .header {
@@ -417,8 +418,7 @@ h3 {
 	border-radius: 22px;
 }
 
-@media (max-width: 860px){
-	body { background: none;}
+@media (max-width: 1000px){
 
 	.kader{
 
@@ -494,7 +494,7 @@ h3 {
 		}
 	
 		.logo img {
-			max-width: 50%;
+			max-width: 30%;
 			position: center;
 		}
 	
@@ -527,6 +527,11 @@ h3 {
 		
 	}
 
+	.logo img {
+		max-width: 50%;
+		position: center;
+	}
+
 	}
 	.water{
 		
@@ -535,6 +540,7 @@ h3 {
 	#slider{
 		padding: 0;
 		width: 360pt;
+		position: center;
 	}
 
 
@@ -546,7 +552,8 @@ h3 {
 		padding: 10px;}
 		#slider{
 			padding: 0;
-			width: 300pt;
+			width: 280pt;
+			position: center;
 		}
 	
 }
