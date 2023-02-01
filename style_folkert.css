@@ -509,13 +509,15 @@ h3 {
 		.nav {
 			display: none;
 		}
-	
+		p{display: flex;
+	 font-size: 15px
+
 }
 
 
 @media (max-width: 690px){
 	iframe{
-		width: 80%!important;
+		width: 100%!important;
 		padding: 20px;
 	}
 	h1  {display: flex;
@@ -524,8 +526,6 @@ h3 {
 		font-size: 25pt;
 		
 	}
-	p{display: flex;
-	 font-size: 15px
 
 	}
 	.water{
@@ -542,7 +542,7 @@ h3 {
 
 @media (max-width: 600px){
 	iframe{
-		width: 65%!important;
+		width: 100%!important;
 		padding: 10px;}
 		#slider{
 			padding: 0;
