@@ -215,8 +215,8 @@ h3 {
 }
 
 #slider {
-	padding-top: 50px;
-	width: 100%;
+	padding-left: 125px;
+	width: 80%;
 	text-align: center;
 	grid-column: 2/10;
 }
