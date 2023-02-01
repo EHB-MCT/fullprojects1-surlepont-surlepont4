@@ -470,8 +470,22 @@ p {
 
 }
 
+@media all and (max-width: 1100px) {
+	.header {
+		height: 55px;
+	}
+
+	.grid {
+		grid-template-rows: 250px 180px auto 180px 400px;
+	}
+
+	.nav {
+		display: none;
+	}
+}
 
 @media all and (max-width: 950px) {
+
 
 	#slide1:checked~#controls label:nth-child(2),
 	#slide2:checked~#controls label:nth-child(3),
