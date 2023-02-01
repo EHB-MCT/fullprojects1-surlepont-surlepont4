@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Toekomst</title>
-		<link rel="stylesheet" href="style_ines.css" />
-	</head>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Toekomst</title>
+	<link rel="stylesheet" href="style_ines.css" />
+	<link rel="stylesheet" href="menu.css" />
+</head>
+
+
+<script defer>
+	function menu(x) {
+		x.classList.toggle('anim');
+		if (document.getElementById("overlay").style.display != "block") {
+			document.getElementById("overlay").style.display = "block";
+		} else {
+			document.getElementById("overlay").style.display = "none";
+		}
+	}
+</script>
+
+
+
+<body>
+
 	<body>
+
 		<div class="header">
 			<div class="header_grid">
 				<div class="logo">
@@ -26,12 +46,38 @@
 					<a href="index.html">Home</a>
 					<a href="geschiedenis.html">Geschiedenis</a>
 					<a href="toekomst.html">Toekomst</a>
-					<a href="contact.html">contact</a>
+					<a href="contact.html">Contact</a>
+
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class='menu'>
+			<div class='ikona' onclick='menu(this)'>
+				<div class='d'></div>
+				<div class='d'></div>
+				<div class='d'></div>
+
+				<div class='overlay' id="overlay">
+					<div class='list'>
+						<a href='index.html'>Home</a>
+						<a href='geschiedenis.html'>Geschiedenis</a>
+						<a href='toekomst.html'>Toekomst</a>
+						<a href='contact.html'>Contact</a>
+					</div>
 				</div>
 			</div>
 		</div>
 
+
+
+
+
+
 		<div class="grid">
+
+
 			<div class="water">
 				<img class="water" src="afbeeldingen/svg/water.svg" alt="" />
 				<div class="title">
@@ -40,84 +86,117 @@
 				</div>
 			</div>
 
-			<div class="frame">
-				<img class="arrow1" src="afbeeldingen/pijlen.png" alt="" />
-				<img class="arrow2" src="afbeeldingen/pijlen.png" alt="" />
-				<div class="images">
-					<div id="slider">
-						<input type="radio" name="slider" id="slide1" checked />
-						<input type="radio" name="slider" id="slide2" />
-						<input type="radio" name="slider" id="slide3" />
-						<input type="radio" name="slider" id="slide4" />
-						<div id="slides">
-							<div id="overflow">
-								<div class="inner">
-									<div class="slide slide_1">
-										<div class="slide-content">
-											<h2></h2>
-											<p></p>
-										</div>
-									</div>
-									<div class="slide slide_2">
-										<div class="slide-content">
-											<h2></h2>
-											<p></p>
-										</div>
-									</div>
-									<div class="slide slide_3">
-										<div class="slide-content">
-											<h2></h2>
-											<p></p>
-										</div>
-									</div>
-									<div class="slide slide_4">
-										<div class="slide-content">
-											<h2></h2>
-											<p></p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="controls">
-							<label for="slide1"></label>
-							<label for="slide2"></label>
-							<label for="slide3"></label>
-							<label for="slide4"></label>
-						</div>
-					</div>
-				</div>
+
+
+			<div class="kader">
+
 				<div class="renders">
 					<h1>renders</h1>
 				</div>
+
+				<div id="slider">
+					<input type="radio" name="slider" id="slide1" checked />
+					<input type="radio" name="slider" id="slide2" />
+					<input type="radio" name="slider" id="slide3" />
+					<input type="radio" name="slider" id="slide4" />
+					<div id="slides">
+						<div id="overflow">
+							<div class="inner">
+								<div class="slide slide_1">
+									<div class="slide-content">
+
+									</div>
+								</div>
+								<div class="slide slide_2">
+									<div class="slide-content">
+
+									</div>
+								</div>
+								<div class="slide slide_3">
+									<div class="slide-content">
+
+									</div>
+								</div>
+								<div class="slide slide_4">
+									<div class="slide-content">
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div id="controls">
+						<label for="slide1"></label>
+						<label for="slide2"></label>
+						<label for="slide3"></label>
+						<label for="slide4"></label>
+					</div>
+					<div id="bullets">
+						<label for="slide1"></label>
+						<label for="slide2"></label>
+						<label for="slide3"></label>
+						<label for="slide4"></label>
+					</div>
+				</div>
+
+
 				<div class="info">
 					<p>
-						Het Brussels Gewest stelde eind 2022 een project voor de Pierre Marchantbrug voor. Begin 2023 liep er een openbaar onderzoek en konden bewoners zich uitspreken over de nieuwe plannen. Deze tonen een brug die niet meer gebruikt wordt door
-						auto’s, met centraal een fietspad in asfalt en langs beide kanten een houten dek voor de voetgangers. Er wordt ook melding gemaakt van banken, picknicktafels en tijdelijke elementen, dus de voorgestelde plannen lijken in de lijn van onze
-						visie te liggen! We hebben een petitie aangemaakt om onze steun te tonen. Deze petitie werd door x personen ondertekend. Surlepont is een voorstander van dit project en reageerde schriftelijk en mondeling op de overlegcommissie van 16
+						Het Brussels Gewest stelde eind 2022 een project voor de Pierre Marchantbrug voor. Begin 2023
+						liep er een openbaar onderzoek en konden bewoners zich uitspreken over de nieuwe plannen. Deze
+						tonen een brug die niet meer gebruikt wordt door
+						auto’s, met centraal een fietspad in asfalt en langs beide kanten een houten dek voor de
+						voetgangers. Er wordt ook melding gemaakt van banken, picknicktafels en tijdelijke elementen,
+						dus de voorgestelde plannen lijken in de lijn van onze
+						visie te liggen! We hebben een petitie aangemaakt om onze steun te tonen. Deze petitie werd door
+						x personen ondertekend. Surlepont is een voorstander van dit project en reageerde schriftelijk
+						en mondeling op de overlegcommissie van 16
 						februari 2023.
 					</p>
 				</div>
+
 				<div class="open">
-					<h1>Openbare ruimte rond brug</h1>
-					<img class="imageO" src="afbeeldingen/Beliris_ Schipperijdok, Pierre Marchantbrug en klein Eilandpark.PNG" alt="" />
+					<h1>Openbare <span>ruimte</span> rond brug</h1>
 				</div>
+
+				<div class="beliris">
+
+					<img src="afbeeldingen/Beliris/plan.PNG" alt="">
+					<img src="afbeeldingen/Beliris/plan2.PNG" alt="">
+				</div>
+
+
 				<div class="info2">
 					<p>
-						Beliris zal alle openbare ruimten heraanleggen in de nieuwe Biestebroekwijk. U ziet twee visualisaties uit een voorstudie van Beliris van december 2021. De Grondelsstraat wordt een groene openbare ruimte, enkel nog toegankelijk voor
-						voetgangers en fietsers, vanaf de Pierre Marchantbrug tot de spoorwegbrug. Ook het Grondelsplein net aan de andere kant van de spoorwegbrug wordt volledig autovrij.
+						Beliris zal alle openbare ruimten heraanleggen in de nieuwe Biestebroekwijk. U ziet twee
+						visualisaties uit een voorstudie van Beliris van december 2021. De Grondelsstraat wordt een
+						groene openbare ruimte, enkel nog toegankelijk voor
+						voetgangers en fietsers, vanaf de Pierre Marchantbrug tot de spoorwegbrug. Ook het Grondelsplein
+						net aan de andere kant van de spoorwegbrug wordt volledig autovrij.
 					</p>
 				</div>
+
 				<div class="debate">
-					<a class="debatepic" href="https://www.bruzz.be/videoreeks/maandag-18-april-2022/video-open-debate-hoe-ziet-de-toekomst-van-de-pierre-marchantbrug"><img src="afbeeldingen/interview/interview.jpg" /></a>
-					<p class="debatetext">Op 13 april 2022 organiseerde Filter Café Filtré Atelier, samen met BX1 en BRUZZ een stadsdebat op de brug. Herbekijk het debat hier.</p>
-					<a class="link" href="https://www.bruzz.be/videoreeks/maandag-18-april-2022/video-open-debate-hoe-ziet-de-toekomst-van-de-pierre-marchantbrug">Bekijk hier</a>
+					<a class="debatepic"
+						href="https://www.bruzz.be/videoreeks/maandag-18-april-2022/video-open-debate-hoe-ziet-de-toekomst-van-de-pierre-marchantbrug"><img
+							src="afbeeldingen/interview/interview.jpg" /></a>
+					<div class="debatetext">
+						<p class="debatetext">Op 13 april 2022 organiseerde Filter Café Filtré Atelier, samen met BX1 en
+							BRUZZ een stadsdebat op de brug. Herbekijk het debat hier.</p>
+						<a class="link"
+							href="https://www.bruzz.be/videoreeks/maandag-18-april-2022/video-open-debate-hoe-ziet-de-toekomst-van-de-pierre-marchantbrug">Bekijk
+							hier</a>
+					</div>
 				</div>
+
+
 			</div>
 
 			<div class="water2">
 				<img class="water" src="afbeeldingen/svg/wateronder.svg" alt="" />
 			</div>
+
 		</div>
+
 	</body>
-</html>
