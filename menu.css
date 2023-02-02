@@ -86,3 +86,11 @@
     }
 
 }
+
+@media all and (max-width: 320px) {
+    .menu {
+
+        margin-left: 70%;
+
+    }
+}
