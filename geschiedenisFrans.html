@@ -8,7 +8,18 @@
 	<title>geschiedenis</title>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style_folkert.css" />
+	<link rel="stylesheet" href="menu.css" />
 </head>
+<script defer>
+	function menu(x) {
+		x.classList.toggle('anim');
+		if (document.getElementById("overlay").style.display != "block") {
+			document.getElementById("overlay").style.display = "block";
+		} else {
+			document.getElementById("overlay").style.display = "none";
+		}
+	}
+</script>
 
 <body>
 	<div class="header">
@@ -33,6 +44,22 @@
 		</div>
 	</div>
 
+	<div class='menu'>
+		<div class='ikona' onclick='menu(this)'>
+			<div class='d'></div>
+			<div class='d'></div>
+			<div class='d'></div>
+
+			<div class='overlay' id="overlay">
+				<div class='list'>
+					<a href="indexFR.html">Home</a>
+					<a href="geschiedenisFrans.html">Histoire</a>
+					<a href="toekomstfr.html">l'Avenir</a>
+					<a href="contactFR.html">Contact</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="grid">
 
 		<div class="water">
@@ -43,25 +70,27 @@
 			</div>
 		</div>
 
-	<div class="kader">
-		<div class="geschiedenis">
-			<h1>Le pont inspire!</h1>
-			
-	
-				
-				<div style="padding:50% 0 0 0;position:relative;">
-				<iframe src="https://player.vimeo.com/video/794508144?h=b7d0cfdd4b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-				frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 
-				allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"
-				 title="Birds"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+		<div class="kader">
+			<div class="geschiedenis">
+				<h1>Le pont inspire!</h1>
 
-				 <p>performance de dance  Birds de Seppe Baeyens / Wim Vandekeybus / Ultima Vez 
+
+
+				<div style="padding:50% 0 0 0;position:relative;">
+					<iframe
+						src="https://player.vimeo.com/video/794508144?h=b7d0cfdd4b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+						frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+						style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Birds"></iframe>
+				</div>
+				<script src="https://player.vimeo.com/api/player.js"></script>
+
+				<p>performance de dance Birds de Seppe Baeyens / Wim Vandekeybus / Ultima Vez
 					dans le dimanche sans voiture 2021 </p>
-					<h1>Tussenbruggen</h1>
-					<p>Alex Deforce fait en 2022 une sound walk 
-					qui vous pouvez ecouté depuis on promené dans le Pierre Marchantbrug au le pont Paepsem  . </p>
-					<a href="https://alexdeforce.com/totnutoe/poezie/tussenbruggen/ ">ecoute ici</a>
-					<h1>propositions de etudiant architecture et urbanism Ugent</h1>
+				<h1>Tussenbruggen</h1>
+				<p>Alex Deforce fait en 2022 une sound walk
+					qui vous pouvez ecouté depuis on promené dans le Pierre Marchantbrug au le pont Paepsem . </p>
+				<a href="https://alexdeforce.com/totnutoe/poezie/tussenbruggen/ ">ecoute ici</a>
+				<h1>propositions de etudiant architecture et urbanism Ugent</h1>
 				<div id="slider">
 					<input type="radio" name="slider" id="slide1" checked />
 					<input type="radio" name="slider" id="slide2" />
@@ -82,77 +111,91 @@
 							<div class="inner">
 								<div class="slide slide_1">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_45 Microsoft Lens 13.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/21-12-2021, 21_45 Microsoft Lens 13.jpeg">
 									</div>
 								</div>
 								<div class="slide slide_2">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_47 Microsoft Lens 12.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/21-12-2021, 21_47 Microsoft Lens 12.jpeg">
 									</div>
 								</div>
 								<div class="slide slide_3">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_48 Microsoft Lens 11.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/21-12-2021, 21_48 Microsoft Lens 11.jpeg">
 									</div>
 								</div>
 								<div class="slide slide_4">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_49 Microsoft Lens 10.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/21-12-2021, 21_49 Microsoft Lens 10.jpeg">
 									</div>
 								</div>
 								<div class="slide slide_5">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_49 Microsoft Lens(1) 9.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/21-12-2021, 21_49 Microsoft Lens(1) 9.jpeg">
 									</div>
 								</div>
 								<div class="slide slide_6">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_51 Microsoft Lens 8.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/21-12-2021, 21_51 Microsoft Lens 8.jpeg">
 									</div>
 								</div>
 								<div class="slide slide_7">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_52 Microsoft Lens 7.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/21-12-2021, 21_52 Microsoft Lens 7.jpeg">
 									</div>
 								</div>
 								<div class="slide slide_8">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_53 Microsoft Lens 6.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/21-12-2021, 21_53 Microsoft Lens 6.jpeg">
 									</div>
 								</div>
 								<div class="slide slide_9">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_54 Microsoft Lens 5.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/21-12-2021, 21_54 Microsoft Lens 5.jpeg">
 									</div>
 								</div>
 								<div class="slide slide_10">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_54 Microsoft Lens(1) 3.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/21-12-2021, 21_54 Microsoft Lens(1) 3.jpeg">
 									</div>
 								</div>
 								<div class="slide slide_11">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_55 Microsoft Lens 2.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/21-12-2021, 21_55 Microsoft Lens 2.jpeg">
 									</div>
 								</div>
 								<div class="slide slide_12">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_56 Microsoft Lens 4.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/21-12-2021, 21_56 Microsoft Lens 4.jpeg">
 									</div>
 								</div>
 								<div class="slide slide_13">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_56 Microsoft Lens(1) 1.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/21-12-2021, 21_56 Microsoft Lens(1) 1.jpeg">
 									</div>
 								</div>
 								<div class="slide slide_14">
 									<div class="slide-content">
-										<img class="slidepic" src="afbeeldingen/studentenwerk/Schilderijdok c Olivier Slosse.jpeg">
+										<img class="slidepic"
+											src="afbeeldingen/studentenwerk/Schilderijdok c Olivier Slosse.jpeg">
 									</div>
 								</div>
-								
-								
-	
+
+
+
 							</div>
 						</div>
 					</div>

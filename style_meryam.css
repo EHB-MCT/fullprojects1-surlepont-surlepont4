@@ -243,9 +243,31 @@ textarea {
 }
 
 /* label {     margin-top: 20px;     margin-bottom: 20px;     grid-column: 2/6;     grid-row-start: 1;     font-family: "azo-sans-web", sans-serif;     color: #377150;     font-size: 20px;     font-weight: 500;     font-style: normal; } input {     grid-column: 2/6;     grid-row-start: 2;     border-color: #88C0BD;     border-style: solid;     border-radius: 22px;     height: 40px;     padding-left: 15px;     margin-bottom: 20px; } .email {     grid-column: 7/11;     margin-left: 20px; } .bericht1 {     margin-top: 20px;     margin-bottom: 20px;     grid-column: 2/11;     grid-row-start: 3; } .bericht2 {     grid-column: 2/11;     grid-row-start: 4;     height: 200px; } .stuur {     grid-column: 5/8;     height: 40px;     border-radius: 22px;     border: none;     background-color: #377150;     color: white;     font-size: 20px;     font-family: "azo-sans-web", sans-serif;     font-weight: 500;     font-style: normal; }*/
+@media all and (max-width: 1100px) {
+    .header {
+        height: 55px;
+    }
+
+    .grid {
+        grid-template-rows: 250px 180px auto 180px 400px;
+    }
+
+    .nav {
+        display: none;
+    }
+}
+
 @media all and (max-width: 950px) {
     .grid {
         grid-template-rows: 150px 180px auto 180px 400px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header {
+        height: 55px;
     }
 }
 
@@ -291,6 +313,8 @@ textarea {
     }
 
     .submit {
+        margin-left: 70px;
+        margin-right: 70px;
         margin-bottom: 20px;
         padding: 20px;
         grid-column: 1/2;
