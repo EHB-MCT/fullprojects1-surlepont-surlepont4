@@ -616,6 +616,15 @@ h3 {
 
 @media (max-width: 550px) {
 
+	#bullets {
+		display: none;
+	}
+
+	#bullets label {
+		display: none;
+	}
+
+
 	#slide1:checked~#controls label:nth-child(2),
 	#slide2:checked~#controls label:nth-child(3),
 	#slide3:checked~#controls label:nth-child(4),
@@ -713,13 +722,6 @@ h3 {
 	}
 
 
-	#bullets {
-		display: none;
-	}
-
-	#bullets label {
-		display: none;
-	}
 
 	.p {
 		font-size: 12pt;
@@ -769,34 +771,6 @@ h3 {
 		margin-top: 8px;
 		grid-column: 2/5;
 	}
-<<<<<<< HEAD
-=======
-
-	#slider {
-		margin-left: 4%;
-		width: 250px;
-		position: center;
-	}
-
-	.slidepic {
-		max-height: 350px;
-		border-radius: 10px;
-	}
-}
-
-@media all and (max-width: 275px) {
-	#slider {
-		margin-left: 4%;
-		width: 200px;
-		position: center;
-	}
-
-	.slidepic {
-		max-height: 250px;
-		border-radius: 2px;
-		max-width: 200px;
-	}
->>>>>>> 0d74329d8892bb0d5ec8138e592578f6b6f0bce1
 
 
 }
