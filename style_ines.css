@@ -696,6 +696,35 @@ p {
 	}
 }
 
+@media all and (max-width: 400px) {
+	#slides .inner {
+		height: 120px;
+	}
+
+	#slide1:checked~#controls label:nth-child(2),
+	#slide2:checked~#controls label:nth-child(3),
+	#slide3:checked~#controls label:nth-child(4),
+	#slide4:checked~#controls label:nth-child(1) {
+		background: url(afbeeldingen/svg/arrowsliderR.svg) no-repeat;
+		float: right;
+		margin: 100px -10px 0 0;
+		display: block;
+		background-size: 40%;
+	}
+
+	#slide1:checked~#controls label:nth-last-child(2),
+	#slide2:checked~#controls label:nth-last-child(3),
+	#slide3:checked~#controls label:nth-last-child(4),
+	#slide4:checked~#controls label:nth-last-child(1) {
+		background: url(afbeeldingen/svg/arrowsliderL.svg) no-repeat;
+		float: left;
+		margin: 100px 0 0 20px;
+		display: block;
+		background-size: 40%;
+	}
+
+}
+
 @media all and (max-width: 320px) {
 
 	.debatetext {
@@ -719,7 +748,7 @@ p {
 	}
 
 	#slides .inner {
-		height: 100px;
+		height: 85px;
 	}
 
 	.open h3 {
@@ -773,7 +802,7 @@ p {
 	#slide4:checked~#controls label:nth-child(1) {
 		background: url(afbeeldingen/svg/arrowsliderR.svg) no-repeat;
 		float: right;
-		margin: 100px -10px 0 0;
+		margin: 110px -10px 0 0;
 		display: block;
 		background-size: 40%;
 	}
@@ -784,7 +813,7 @@ p {
 	#slide4:checked~#controls label:nth-last-child(1) {
 		background: url(afbeeldingen/svg/arrowsliderL.svg) no-repeat;
 		float: left;
-		margin: 100px 0 0 20px;
+		margin: 110px 0 0 20px;
 		display: block;
 		background-size: 40%;
 	}
