@@ -819,3 +819,9 @@ p {
 	}
 
 }
+
+@media (max-width: 950px) {
+	p {
+		font-size: 12px;
+	}
+}
