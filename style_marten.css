@@ -116,12 +116,13 @@ body {
 }
 
 .wie img {
-	width: 100%;
+	margin-left: 40px;
+	width: 90%;
 	border-radius: 22px;
 }
 
 .wie p {
-	padding-right: 60px;
+	padding-right: -10px;
 }
 
 .amis {
@@ -430,6 +431,18 @@ h3 {
 }
 
 @media all and (max-width: 1100px) {
+	.wie {
+
+		flex-direction: column;
+		text-align: center;
+		margin-left: -35px;
+	}
+
+	.wietext {
+		padding-left: -20px;
+
+	}
+
 	.header {
 		height: 55px;
 	}
@@ -481,11 +494,7 @@ h3 {
 		display: block;
 	}
 
-	.wie {
-		margin-left: auto;
-		flex-direction: column;
-		text-align: center;
-	}
+
 
 	.wie p {
 		font-size: 12px;
