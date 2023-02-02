@@ -25,14 +25,14 @@ body {
 	align-items: center;
 }
 
-.taal {
+.language {
 	grid-column: 4/5;
 	font-family: azo-sans-web, sans-serif;
 	font-weight: 700;
 	font-size: 10pt;
 }
 
-.taal a {
+.language a {
 	text-decoration: none;
 	color: #88c0bd;
 }
@@ -92,7 +92,7 @@ body {
 	top: 30%;
 }
 
-.kader {
+.colum {
 	grid-column: 2/12;
 	grid-row: 3/4;
 	background-color: white;
@@ -123,7 +123,7 @@ p {
 	font-family: azo-sans-web, sans-serif;
 	font-weight: 500;
 	font-style: normal;
-
+	font-size: 12pt;
 }
 
 h1 {
@@ -149,7 +149,7 @@ h3 {
 	font-size: 34px;
 }
 
-.taalbtn {
+.languagebtn {
 	color: #88C0BD;
 	grid-column: 4/5;
 	font-family: "azo-sans-web", sans-serif;
@@ -159,7 +159,7 @@ h3 {
 	background-color: white;
 }
 
-.taal {
+.language {
 	position: relative;
 	display: inline-block;
 }
@@ -184,31 +184,31 @@ h3 {
 	background-color: #f1f1f1
 }
 
-.taal:hover .dropdown {
+.language:hover .dropdown {
 	display: block;
 }
 
-.geschiedenis {
+.history {
 	text-align: center;
 
 
 }
 
-.geschiedenis video {
+.history video {
 	grid-column: 3/10;
 	width: 100%;
 
 }
 
-.geschiedenis h1 {
+.history h1 {
 	padding-top: 50px;
 }
 
-.geschiedenis p {
+.history p {
 	margin-bottom: 40px;
 }
 
-.geschiedenis a {
+.history a {
 	background-color: #377150;
 	color: #f1f1f1;
 	font-family: "roc-grotesk-condensed", sans-serif;
@@ -423,38 +423,33 @@ h3 {
 	border-radius: 22px;
 }
 
-@media (max-width: 1000px) {
-
-	.kader {
-
-		background-color: white;
-		width: 100%;
-		border-top: 80px;
-		grid-row: 1/12;
-	}
-
-	.water {
+@media (max-width: 1100px) {
+	.nav {
 		display: none;
 	}
+}
 
-	.geschiedenis,
-	.geschiedenis div {
-		width: 100%;
-	}
-
-	iframe {
-		width: 100% !important;
-		padding: 0px;
-	}
+@media (max-width: 1000px) {
 
 
 	.water {
-		width: 100%;
+		display: block;
+	}
+
+	.water2 {
+		display: block;
 	}
 
 	#slider {
-		padding: 0;
-		width: 430pt;
+		width: 400px;
+	}
+
+	.grid {
+		grid-template-rows: 200px auto auto 180px 400px;
+	}
+
+	.colum {
+		margin-top: -4px;
 	}
 
 	.header {
@@ -473,14 +468,14 @@ h3 {
 		align-items: center;
 	}
 
-	.taal {
+	.language {
 		grid-column: 5/6;
 		font-family: azo-sans-web, sans-serif;
 		font-weight: 700;
 		font-size: 10pt;
 	}
 
-	.taal a {
+	.language a {
 		text-decoration: none;
 		color: #88c0bd;
 	}
@@ -505,6 +500,7 @@ h3 {
 		line-height: 35px;
 	}
 
+
 	.logo img {
 		max-width: 30%;
 		position: center;
@@ -514,13 +510,18 @@ h3 {
 		grid-column: 2/4;
 	}
 
-	.grid {
-		grid-template-rows: 100px 180px auto 180px 400px;
-	}
 
 	.nav {
 		display: none;
 	}
+
+
+
+	#slider {
+		padding: 0;
+		width: 430pt;
+	}
+
 
 	p {
 		display: flex;
@@ -528,62 +529,53 @@ h3 {
 	}
 
 
-	@media (max-width: 690px) {
-		iframe {
-			width: 100% !important;
-			padding: 20px;
-		}
-
-		h1 {
-			display: flex;
-			justify-content: left;
-			margin: 20px;
-			font-size: 25pt;
-
-		}
-
-		.logo img {
-			max-width: 50%;
-			position: center;
-		}
-
-	}
-
-	.water {
-
-		width: 100%;
-	}
-
 	#slider {
+		margin-left: 4%;
 		padding: 0;
 		width: 360pt;
 		position: center;
 	}
 
+}
+
+@media (max-width: 690px) {
+
+
+	h1 {
+
+		margin: 20px;
+		font-size: 25pt;
+
+	}
+
+	.logo img {
+		max-width: 50%;
+		position: center;
+	}
 
 }
 
 @media (max-width: 600px) {
-	iframe {
-		width: 100% !important;
-		padding: 10px;
-	}
+
 
 	#slider {
-		padding: 0;
+		margin-left: 4%;
 		width: 280pt;
 		position: center;
 	}
 
 }
 
-@media all and (max-width: 1100px) {
-	.header {
-		height: 55px;
+@media all and (max-width: 320px) {
+
+	.logo img {
+
+		width: 80%;
+		position: center;
 	}
 
-	.nav {
-		display: none;
+	.logo {
+		margin-top: 8px;
+		grid-column: 2/5;
 	}
-
 }

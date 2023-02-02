@@ -6,6 +6,8 @@ body {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
 
 .header {
@@ -253,11 +255,11 @@ p {
 }
 
 .debatetext {
-	padding-left: 20px;
 	text-align: left;
 	display: flex;
 	flex-direction: column;
 	align-self: center;
+	margin-left: 20px;
 }
 
 .debatetext a {
@@ -676,8 +678,15 @@ p {
 
 @media all and (max-width: 500px) {
 
+
+
 	.title h1 {
 		font-size: 25pt;
+
+	}
+
+	.title h2 {
+		font-size: 18pt;
 	}
 
 
@@ -685,7 +694,128 @@ p {
 	.grid {
 		grid-template-rows: 50px 180px auto 180px 400px;
 	}
+}
 
+@media all and (max-width: 400px) {
+	#slides .inner {
+		height: 120px;
+	}
 
+	#slide1:checked~#controls label:nth-child(2),
+	#slide2:checked~#controls label:nth-child(3),
+	#slide3:checked~#controls label:nth-child(4),
+	#slide4:checked~#controls label:nth-child(1) {
+		background: url(afbeeldingen/svg/arrowsliderR.svg) no-repeat;
+		float: right;
+		margin: 100px -10px 0 0;
+		display: block;
+		background-size: 40%;
+	}
+
+	#slide1:checked~#controls label:nth-last-child(2),
+	#slide2:checked~#controls label:nth-last-child(3),
+	#slide3:checked~#controls label:nth-last-child(4),
+	#slide4:checked~#controls label:nth-last-child(1) {
+		background: url(afbeeldingen/svg/arrowsliderL.svg) no-repeat;
+		float: left;
+		margin: 100px 0 0 20px;
+		display: block;
+		background-size: 40%;
+	}
+
+}
+
+@media all and (max-width: 320px) {
+
+	.debatetext {
+
+		margin-left: 1px;
+	}
+
+	.logo img {
+
+		width: 80%;
+		position: center;
+	}
+
+	.logo {
+		margin-top: 8px;
+		grid-column: 2/5;
+	}
+
+	.debatetext {
+		margin-right: -1px;
+	}
+
+	#slides .inner {
+		height: 85px;
+	}
+
+	.open h3 {
+		font-size: 14pt;
+	}
+
+	.renders h3 {
+		font-size: 14pt;
+	}
+
+	.wietext h3 {
+		margin-left: 50px;
+	}
+
+	.title {
+		margin-left: 5px;
+
+	}
+
+	.title h1 {
+		font-size: 14pt;
+		margin-left: -10px;
+		line-height: 10px;
+
+	}
+
+	.title h2 {
+		font-size: 12pt;
+		margin-left: -10px;
+		line-height: 16px;
+	}
+
+	.title2 {
+		margin-left: -20px;
+	}
+
+	.title2 h1 {
+		line-height: 30px;
+		font-size: 14pt;
+	}
+
+	.title2 h2 {
+		margin-top: -20px;
+		font-size: 10pt;
+		line-height: 16px;
+	}
+
+	#slide1:checked~#controls label:nth-child(2),
+	#slide2:checked~#controls label:nth-child(3),
+	#slide3:checked~#controls label:nth-child(4),
+	#slide4:checked~#controls label:nth-child(1) {
+		background: url(afbeeldingen/svg/arrowsliderR.svg) no-repeat;
+		float: right;
+		margin: 110px -10px 0 0;
+		display: block;
+		background-size: 40%;
+	}
+
+	#slide1:checked~#controls label:nth-last-child(2),
+	#slide2:checked~#controls label:nth-last-child(3),
+	#slide3:checked~#controls label:nth-last-child(4),
+	#slide4:checked~#controls label:nth-last-child(1) {
+		background: url(afbeeldingen/svg/arrowsliderL.svg) no-repeat;
+		float: left;
+		margin: 110px 0 0 20px;
+		display: block;
+		background-size: 40%;
+	}
 
 }

@@ -1,254 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>geschiedenis</title>
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="style_folkert.css" />
-	<link rel="stylesheet" href="menu.css" />
-</head>
-<script defer>
-	function menu(x) {
-		x.classList.toggle('anim');
-		if (document.getElementById("overlay").style.display != "block") {
-			document.getElementById("overlay").style.display = "block";
-		} else {
-			document.getElementById("overlay").style.display = "none";
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>l'histoire</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="style_folkert.css" />
+		<link rel="stylesheet" href="menu.css" />
+	</head>
+	<script defer>
+		function menu(x) {
+			x.classList.toggle("anim");
+			if (document.getElementById("overlay").style.display != "block") {
+				document.getElementById("overlay").style.display = "block";
+			} else {
+				document.getElementById("overlay").style.display = "none";
+			}
 		}
-	}
-</script>
+	</script>
 
-<body>
-	<div class="header">
-		<div class="header_grid">
-			<div class="logo">
-				<img src="afbeeldingen/logo/logo-new.svg" alt="" />
-			</div>
-			<div class="taal">
-				<button class="taalbtn">FR</button>
-				<div class="dropdown">
-					<a href="geschiedenisNederlands.html">NL</a>
-					<a href="geschiedenisEngels.html">EN</a>
+	<body>
+		<div class="header">
+			<div class="header_grid">
+				<div class="logo">
+					<img src="afbeeldingen/logo/logo-new.svg" alt="" />
 				</div>
-			</div>
+				<div class="language">
+					<button class="languagebtn">FR</button>
+					<div class="dropdown">
+						<a href="geschiedenisNederlands.html">NL</a>
+						<a href="geschiedenisEngels.html">EN</a>
+					</div>
+				</div>
 
-			<div class="nav">
-				<a href="indexFR.html">Home</a>
-				<a href="geschiedenisFrans.html">l'histoire</a>
-				<a href="toekomstfr.html">Future</a>
-				<a href="contact.html">contact</a>
-			</div>
-		</div>
-	</div>
-
-	<div class='menu'>
-		<div class='ikona' onclick='menu(this)'>
-			<div class='d'></div>
-			<div class='d'></div>
-			<div class='d'></div>
-
-			<div class='overlay' id="overlay">
-				<div class='list'>
+				<div class="nav">
 					<a href="indexFR.html">Home</a>
-					<a href="geschiedenisFrans.html">Histoire</a>
-					<a href="toekomstfr.html">l'Avenir</a>
-					<a href="contactFR.html">Contact</a>
+					<a href="geschiedenisFrans.html">l'histoire</a>
+					<a href="toekomstfr.html">Future</a>
+					<a href="contact.html">contact</a>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="grid">
 
-		<div class="water">
-			<img class="water" src="afbeeldingen/svg/water.svg" alt="" />
-			<div class="title">
-				<h1>L'histoire</h1>
-				<h2>Pierre Marchant brug</h2>
+		<div class="menu">
+			<div class="ikona" onclick="menu(this)">
+				<div class="d"></div>
+				<div class="d"></div>
+				<div class="d"></div>
+
+				<div class="overlay" id="overlay">
+					<div class="list">
+						<a href="indexFR.html">Home</a>
+						<a href="geschiedenisFrans.html">Histoire</a>
+						<a href="toekomstfr.html">l'Avenir</a>
+						<a href="contactFR.html">Contact</a>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<div class="kader">
-			<div class="geschiedenis">
-				<h1>Le pont inspire!</h1>
-
-
-
-				<div style="padding:50% 0 0 0;position:relative;">
-					<iframe
-						src="https://player.vimeo.com/video/794508144?h=b7d0cfdd4b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-						frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-						style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Birds"></iframe>
+		<div class="grid">
+			<div class="water">
+				<img class="water" src="afbeeldingen/svg/water.svg" alt="" />
+				<div class="title">
+					<h1>L'histoire</h1>
+					<h2>Pont Pierre Marchant</h2>
 				</div>
-				<script src="https://player.vimeo.com/api/player.js"></script>
+			</div>
 
-				<p>performance de dance Birds de Seppe Baeyens / Wim Vandekeybus / Ultima Vez
-					dans le dimanche sans voiture 2021 </p>
-				<h1>Tussenbruggen</h1>
-				<p>Alex Deforce fait en 2022 une sound walk
-					qui vous pouvez ecouté depuis on promené dans le Pierre Marchantbrug au le pont Paepsem . </p>
-				<a href="https://alexdeforce.com/totnutoe/poezie/tussenbruggen/ ">ecoute ici</a>
-				<h1>propositions de etudiant architecture et urbanism Ugent</h1>
-				<div id="slider">
-					<input type="radio" name="slider" id="slide1" checked />
-					<input type="radio" name="slider" id="slide2" />
-					<input type="radio" name="slider" id="slide3" />
-					<input type="radio" name="slider" id="slide4" />
-					<input type="radio" name="slider" id="slide5" />
-					<input type="radio" name="slider" id="slide6" />
-					<input type="radio" name="slider" id="slide7" />
-					<input type="radio" name="slider" id="slide8" />
-					<input type="radio" name="slider" id="slide9" />
-					<input type="radio" name="slider" id="slide10" />
-					<input type="radio" name="slider" id="slide11" />
-					<input type="radio" name="slider" id="slide12" />
-					<input type="radio" name="slider" id="slide13" />
-					<input type="radio" name="slider" id="slide14" />
-					<div id="slides">
-						<div id="overflow">
-							<div class="inner">
-								<div class="slide slide_1">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/21-12-2021, 21_45 Microsoft Lens 13.jpeg">
-									</div>
-								</div>
-								<div class="slide slide_2">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/21-12-2021, 21_47 Microsoft Lens 12.jpeg">
-									</div>
-								</div>
-								<div class="slide slide_3">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/21-12-2021, 21_48 Microsoft Lens 11.jpeg">
-									</div>
-								</div>
-								<div class="slide slide_4">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/21-12-2021, 21_49 Microsoft Lens 10.jpeg">
-									</div>
-								</div>
-								<div class="slide slide_5">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/21-12-2021, 21_49 Microsoft Lens(1) 9.jpeg">
-									</div>
-								</div>
-								<div class="slide slide_6">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/21-12-2021, 21_51 Microsoft Lens 8.jpeg">
-									</div>
-								</div>
-								<div class="slide slide_7">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/21-12-2021, 21_52 Microsoft Lens 7.jpeg">
-									</div>
-								</div>
-								<div class="slide slide_8">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/21-12-2021, 21_53 Microsoft Lens 6.jpeg">
-									</div>
-								</div>
-								<div class="slide slide_9">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/21-12-2021, 21_54 Microsoft Lens 5.jpeg">
-									</div>
-								</div>
-								<div class="slide slide_10">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/21-12-2021, 21_54 Microsoft Lens(1) 3.jpeg">
-									</div>
-								</div>
-								<div class="slide slide_11">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/21-12-2021, 21_55 Microsoft Lens 2.jpeg">
-									</div>
-								</div>
-								<div class="slide slide_12">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/21-12-2021, 21_56 Microsoft Lens 4.jpeg">
-									</div>
-								</div>
-								<div class="slide slide_13">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/21-12-2021, 21_56 Microsoft Lens(1) 1.jpeg">
-									</div>
-								</div>
-								<div class="slide slide_14">
-									<div class="slide-content">
-										<img class="slidepic"
-											src="afbeeldingen/studentenwerk/Schilderijdok c Olivier Slosse.jpeg">
-									</div>
-								</div>
+			<div class="colum">
+				<div class="history">
+					<h1>Le pont inspire!</h1>
 
+					<div style="padding: 50% 0 0 0; position: relative">
+						<iframe
+							src="https://player.vimeo.com/video/794508144?h=b7d0cfdd4b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+							frameborder="0"
+							allow="autoplay; fullscreen; picture-in-picture"
+							allowfullscreen
+							style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+							title="Birds"
+						></iframe>
+					</div>
+					<script src="https://player.vimeo.com/api/player.js"></script>
 
-
+					<p>performance de dance "Birds" de Seppe Baeyens, Wim Vandekeybus et Ultima Vez pendant le dimanche sans voiture en 2021</p>
+					<h1>Entre les ponts</h1>
+					<p>Alex Deforce a créé en 2022 un sound walk que vous pouvez écouter pendant une promenade du pont Pierre Marchantbrug vers le pont Paepsem</p>
+					<a href="https://alexdeforce.com/totnutoe/poezie/tussenbruggen/ ">écouter ici</a>
+					<h1>propositions des etudiants d'architecture et urbanisme Ugent + peinture d'Oliver Slosse</h1>
+					<div id="slider">
+						<input type="radio" name="slider" id="slide1" checked />
+						<input type="radio" name="slider" id="slide2" />
+						<input type="radio" name="slider" id="slide3" />
+						<input type="radio" name="slider" id="slide4" />
+						<input type="radio" name="slider" id="slide5" />
+						<input type="radio" name="slider" id="slide6" />
+						<input type="radio" name="slider" id="slide7" />
+						<input type="radio" name="slider" id="slide8" />
+						<input type="radio" name="slider" id="slide9" />
+						<input type="radio" name="slider" id="slide10" />
+						<input type="radio" name="slider" id="slide11" />
+						<input type="radio" name="slider" id="slide12" />
+						<input type="radio" name="slider" id="slide13" />
+						<input type="radio" name="slider" id="slide14" />
+						<div id="slides">
+							<div id="overflow">
+								<div class="inner">
+									<div class="slide slide_1">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_45 Microsoft Lens 13.jpeg" />
+										</div>
+									</div>
+									<div class="slide slide_2">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_47 Microsoft Lens 12.jpeg" />
+										</div>
+									</div>
+									<div class="slide slide_3">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_48 Microsoft Lens 11.jpeg" />
+										</div>
+									</div>
+									<div class="slide slide_4">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_49 Microsoft Lens 10.jpeg" />
+										</div>
+									</div>
+									<div class="slide slide_5">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_49 Microsoft Lens(1) 9.jpeg" />
+										</div>
+									</div>
+									<div class="slide slide_6">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_51 Microsoft Lens 8.jpeg" />
+										</div>
+									</div>
+									<div class="slide slide_7">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_52 Microsoft Lens 7.jpeg" />
+										</div>
+									</div>
+									<div class="slide slide_8">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_53 Microsoft Lens 6.jpeg" />
+										</div>
+									</div>
+									<div class="slide slide_9">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_54 Microsoft Lens 5.jpeg" />
+										</div>
+									</div>
+									<div class="slide slide_10">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_54 Microsoft Lens(1) 3.jpeg" />
+										</div>
+									</div>
+									<div class="slide slide_11">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_55 Microsoft Lens 2.jpeg" />
+										</div>
+									</div>
+									<div class="slide slide_12">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_56 Microsoft Lens 4.jpeg" />
+										</div>
+									</div>
+									<div class="slide slide_13">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/21-12-2021, 21_56 Microsoft Lens(1) 1.jpeg" />
+										</div>
+									</div>
+									<div class="slide slide_14">
+										<div class="slide-content">
+											<img class="slidepic" src="afbeeldingen/studentenwerk/Schilderijdok c Olivier Slosse.jpeg" />
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div id="controls">
-						<label for="slide1"></label>
-						<label for="slide2"></label>
-						<label for="slide3"></label>
-						<label for="slide4"></label>
-						<label for="slide5"></label>
-						<label for="slide6"></label>
-						<label for="slide7"></label>
-						<label for="slide8"></label>
-						<label for="slide9"></label>
-						<label for="slide10"></label>
-						<label for="slide11"></label>
-						<label for="slide12"></label>
-						<label for="slide13"></label>
-						<label for="slide14"></label>
-					</div>
-					<div id="bullets">
-						<label for="slide1"></label>
-						<label for="slide2"></label>
-						<label for="slide3"></label>
-						<label for="slide4"></label>
-						<label for="slide5"></label>
-						<label for="slide6"></label>
-						<label for="slide7"></label>
-						<label for="slide8"></label>
-						<label for="slide9"></label>
-						<label for="slide10"></label>
-						<label for="slide11"></label>
-						<label for="slide12"></label>
-						<label for="slide13"></label>
-						<label for="slide14"></label>
+						<div id="controls">
+							<label for="slide1"></label>
+							<label for="slide2"></label>
+							<label for="slide3"></label>
+							<label for="slide4"></label>
+							<label for="slide5"></label>
+							<label for="slide6"></label>
+							<label for="slide7"></label>
+							<label for="slide8"></label>
+							<label for="slide9"></label>
+							<label for="slide10"></label>
+							<label for="slide11"></label>
+							<label for="slide12"></label>
+							<label for="slide13"></label>
+							<label for="slide14"></label>
+						</div>
+						<div id="bullets">
+							<label for="slide1"></label>
+							<label for="slide2"></label>
+							<label for="slide3"></label>
+							<label for="slide4"></label>
+							<label for="slide5"></label>
+							<label for="slide6"></label>
+							<label for="slide7"></label>
+							<label for="slide8"></label>
+							<label for="slide9"></label>
+							<label for="slide10"></label>
+							<label for="slide11"></label>
+							<label for="slide12"></label>
+							<label for="slide13"></label>
+							<label for="slide14"></label>
+						</div>
 					</div>
 				</div>
 			</div>
 
+			<div class="water2">
+				<img class="water" src="afbeeldingen/svg/wateronder.svg" alt="" />
+			</div>
 		</div>
-
-		<div class="water2">
-			<img class="water" src="afbeeldingen/svg/wateronder.svg" alt="" />
-		</div>
-
-
-	</div>
-
-
-
-
-
-</body>
-
+	</body>
 </html>
 <!--
 
