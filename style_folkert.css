@@ -598,6 +598,7 @@ h3 {
 	.slidepic {
 		max-height: 250px;
 		border-radius: 2px;
+		max-width: 200px;
 	}
 
 }
