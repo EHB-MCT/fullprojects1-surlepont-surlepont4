@@ -423,27 +423,35 @@ h3 {
 	border-radius: 22px;
 }
 
+@media (max-width: 1100px) {
+	.nav {
+		display: none;
+	}
+}
+
 @media (max-width: 1000px) {
 
 
 	.water {
 		display: block;
 	}
-	.water2{
+
+	.water2 {
 		display: block;
 	}
 
-	#slider{
+	#slider {
 		width: 400px;
 	}
 
-	.grid{
+	.grid {
 		grid-template-rows: 200px auto auto 180px 400px;
 	}
 
-	.colum{
+	.colum {
 		margin-top: -4px;
 	}
+
 	.header {
 		position: fixed;
 		width: 100%;
@@ -492,7 +500,7 @@ h3 {
 		line-height: 35px;
 	}
 
-	
+
 	.logo img {
 		max-width: 30%;
 		position: center;
@@ -514,7 +522,7 @@ h3 {
 		width: 430pt;
 	}
 
-	
+
 	p {
 		display: flex;
 		font-size: 15px
@@ -528,13 +536,13 @@ h3 {
 		position: center;
 	}
 
- }
+}
 
 @media (max-width: 690px) {
 
 
 	h1 {
-		
+
 		margin: 20px;
 		font-size: 25pt;
 
@@ -551,9 +559,23 @@ h3 {
 
 
 	#slider {
-		margin-left:4%;
+		margin-left: 4%;
 		width: 280pt;
 		position: center;
 	}
 
+}
+
+@media all and (max-width: 320px) {
+
+	.logo img {
+
+		width: 80%;
+		position: center;
+	}
+
+	.logo {
+		margin-top: 8px;
+		grid-column: 2/5;
+	}
 }
