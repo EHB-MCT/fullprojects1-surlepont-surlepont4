@@ -25,6 +25,10 @@ body {
 	align-items: center;
 }
 
+span {
+	color: #88c0bd;
+}
+
 .language {
 	grid-column: 4/5;
 	font-family: azo-sans-web, sans-serif;
@@ -578,23 +582,26 @@ h3 {
 		margin-top: 8px;
 		grid-column: 2/5;
 	}
-	
+
 	#slider {
 		margin-left: 4%;
 		width: 250px;
 		position: center;
 	}
+
 	.slidepic {
 		max-height: 350px;
 		border-radius: 10px;
 	}
 }
-@media all and (max-width: 275px){
+
+@media all and (max-width: 275px) {
 	#slider {
 		margin-left: 4%;
 		width: 200px;
 		position: center;
 	}
+
 	.slidepic {
 		max-height: 250px;
 		border-radius: 2px;
