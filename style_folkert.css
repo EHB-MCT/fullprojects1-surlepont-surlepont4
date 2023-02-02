@@ -25,14 +25,14 @@ body {
 	align-items: center;
 }
 
-.taal {
+.language {
 	grid-column: 4/5;
 	font-family: azo-sans-web, sans-serif;
 	font-weight: 700;
 	font-size: 10pt;
 }
 
-.taal a {
+.language a {
 	text-decoration: none;
 	color: #88c0bd;
 }
@@ -92,7 +92,7 @@ body {
 	top: 30%;
 }
 
-.kader {
+.colum {
 	grid-column: 2/12;
 	grid-row: 3/4;
 	background-color: white;
@@ -149,7 +149,7 @@ h3 {
 	font-size: 34px;
 }
 
-.taalbtn {
+.languagebtn {
 	color: #88C0BD;
 	grid-column: 4/5;
 	font-family: "azo-sans-web", sans-serif;
@@ -159,7 +159,7 @@ h3 {
 	background-color: white;
 }
 
-.taal {
+.language {
 	position: relative;
 	display: inline-block;
 }
@@ -184,31 +184,31 @@ h3 {
 	background-color: #f1f1f1
 }
 
-.taal:hover .dropdown {
+.language:hover .dropdown {
 	display: block;
 }
 
-.geschiedenis {
+.history {
 	text-align: center;
 
 
 }
 
-.geschiedenis video {
+.history video {
 	grid-column: 3/10;
 	width: 100%;
 
 }
 
-.geschiedenis h1 {
+.history h1 {
 	padding-top: 50px;
 }
 
-.geschiedenis p {
+.history p {
 	margin-bottom: 40px;
 }
 
-.geschiedenis a {
+.history a {
 	background-color: #377150;
 	color: #f1f1f1;
 	font-family: "roc-grotesk-condensed", sans-serif;
@@ -438,10 +438,10 @@ h3 {
 	}
 
 	.grid{
-		grid-template-rows: 200px auto 1800px 180px 400px;
+		grid-template-rows: 200px auto auto 180px 400px;
 	}
 
-	.kader{
+	.colum{
 		margin-top: -4px;
 	}
 	.header {
@@ -460,14 +460,14 @@ h3 {
 		align-items: center;
 	}
 
-	.taal {
+	.language {
 		grid-column: 5/6;
 		font-family: azo-sans-web, sans-serif;
 		font-weight: 700;
 		font-size: 10pt;
 	}
 
-	.taal a {
+	.language a {
 		text-decoration: none;
 		color: #88c0bd;
 	}
